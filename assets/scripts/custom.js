@@ -1,0 +1,508 @@
+var canvas1 = document.getElementById("canvas1");
+var canvas2 = document.getElementById("canvas2");
+var canvas3 = document.getElementById("canvas3");
+var ctx1 = canvas1.getContext("2d");
+var ctx2 = canvas2.getContext("2d");
+var ctx3 = canvas3.getContext("2d");
+
+var rainthroughnum = 500;
+var speedRainTrough = 25;
+var RainTrough = [];
+
+var rainnum = 500;
+var rain = [];
+
+var lightning = [];
+var lightTimeCurrent = 0;
+var lightTimeTotal = 0;
+
+var w = (canvas1.width = canvas2.width = canvas3.width = window.innerWidth);
+var h = (canvas1.height = canvas2.height = canvas3.height = window.innerHeight);
+window.addEventListener("resize", function () {
+  w = canvas1.width = canvas2.width = canvas3.width = window.innerWidth;
+  h = canvas1.height = canvas2.height = canvas3.height = window.innerHeight;
+});
+
+function random(min, max) {
+  return Math.random() * (max - min + 1) + min;
+}
+
+function clearcanvas1() {
+  ctx1.clearRect(0, 0, w, h);
+}
+
+function clearcanvas2() {
+  ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+}
+
+function clearCanvas3() {
+  ctx3.globalCompositeOperation = "destination-out";
+  ctx3.fillStyle = "rgba(0,0,0," + random(1, 30) / 100 + ")";
+  ctx3.fillRect(0, 0, w, h);
+  ctx3.globalCompositeOperation = "source-over";
+}
+
+function createRainTrough() {
+  for (var i = 0; i < rainthroughnum; i++) {
+    RainTrough[i] = {
+      x: random(0, w),
+      y: random(0, h),
+      length: Math.floor(random(1, 830)),
+      opacity: Math.random() * 0.2,
+      xs: random(-2, 2),
+      ys: random(10, 20),
+    };
+  }
+}
+
+function createRain() {
+  for (var i = 0; i < rainnum; i++) {
+    rain[i] = {
+      x: Math.random() * w,
+      y: Math.random() * h,
+      l: Math.random() * 1,
+      xs: -4 + Math.random() * 4 + 2,
+      ys: Math.random() * 10 + 10,
+    };
+  }
+}
+
+function createLightning() {
+  var x = random(100, w - 100);
+  var y = random(0, h / 4);
+
+  var createCount = random(1, 3);
+  for (var i = 0; i < createCount; i++) {
+    single = {
+      x: x,
+      y: y,
+      xRange: random(5, 30),
+      yRange: random(10, 25),
+      path: [
+        {
+          x: x,
+          y: y,
+        },
+      ],
+      pathLimit: random(40, 55),
+    };
+    lightning.push(single);
+  }
+}
+
+function drawRainTrough(i) {
+  ctx1.beginPath();
+  var grd = ctx1.createLinearGradient(
+    0,
+    RainTrough[i].y,
+    0,
+    RainTrough[i].y + RainTrough[i].length
+  );
+  grd.addColorStop(0, "rgba(255,255,255,0)");
+  grd.addColorStop(1, "rgba(255,255,255," + RainTrough[i].opacity + ")");
+
+  ctx1.fillStyle = grd;
+  ctx1.fillRect(RainTrough[i].x, RainTrough[i].y, 1, RainTrough[i].length);
+  ctx1.fill();
+}
+
+function drawRain(i) {
+  ctx2.beginPath();
+  ctx2.moveTo(rain[i].x, rain[i].y);
+  ctx2.lineTo(
+    rain[i].x + rain[i].l * rain[i].xs,
+    rain[i].y + rain[i].l * rain[i].ys
+  );
+  ctx2.strokeStyle = "rgba(174,194,224,0.5)";
+  ctx2.lineWidth = 1;
+  ctx2.lineCap = "round";
+  ctx2.stroke();
+}
+
+function drawLightning() {
+  for (var i = 0; i < lightning.length; i++) {
+    var light = lightning[i];
+
+    light.path.push({
+      x:
+        light.path[light.path.length - 1].x +
+        (random(0, light.xRange) - light.xRange / 2),
+      y: light.path[light.path.length - 1].y + random(0, light.yRange),
+    });
+
+    if (light.path.length > light.pathLimit) {
+      lightning.splice(i, 1);
+    }
+
+    ctx3.strokeStyle = "transparent";
+    ctx3.lineWidth = 3;
+    if (random(0, 15) === 0) {
+      ctx3.lineWidth = 6;
+    }
+    if (random(0, 30) === 0) {
+      ctx3.lineWidth = 8;
+    }
+
+    ctx3.beginPath();
+    ctx3.moveTo(light.x, light.y);
+    for (var pc = 0; pc < light.path.length; pc++) {
+      ctx3.lineTo(light.path[pc].x, light.path[pc].y);
+    }
+    if (Math.floor(random(0, 30)) === 1) {
+      //to fos apo piso
+      ctx3.fillStyle = "rgba(255, 255, 255, " + random(1, 3) / 100 + ")";
+      ctx3.fillRect(0, 0, w, h);
+    }
+    ctx3.lineJoin = "miter";
+    ctx3.stroke();
+  }
+}
+
+function animateRainTrough() {
+  clearcanvas1();
+  for (var i = 0; i < rainthroughnum; i++) {
+    if (RainTrough[i].y >= h) {
+      RainTrough[i].y = h - RainTrough[i].y - RainTrough[i].length * 5;
+    } else {
+      RainTrough[i].y += speedRainTrough;
+    }
+    drawRainTrough(i);
+  }
+}
+
+function animateRain() {
+  clearcanvas2();
+  for (var i = 0; i < rainnum; i++) {
+    rain[i].x += rain[i].xs;
+    rain[i].y += rain[i].ys;
+    if (rain[i].x > w || rain[i].y > h) {
+      rain[i].x = Math.random() * w;
+      rain[i].y = -20;
+    }
+    drawRain(i);
+  }
+}
+
+function animateLightning() {
+  clearCanvas3();
+  lightTimeCurrent++;
+  if (lightTimeCurrent >= lightTimeTotal) {
+    createLightning();
+    lightTimeCurrent = 0;
+    lightTimeTotal = 200; //rand(100, 200)
+  }
+  drawLightning();
+}
+
+function init() {
+  createRainTrough();
+  createRain();
+  window.addEventListener("resize", createRainTrough);
+}
+init();
+
+function animloop() {
+  animateRainTrough();
+  animateRain();
+  animateLightning();
+  requestAnimationFrame(animloop);
+}
+animloop();
+
+if ($(window).width() < 768) {
+  // Optional: Add a class to body for mobile-specific styling
+  $("body").addClass("mobile-no-slider");
+}
+
+
+
+function readMore() {
+  var text = document.querySelector(".more-text");
+
+  var text = document.querySelector(".more-text");
+  var btn = document.querySelector(".read-more-text");
+
+  if (text.style.display === "none" || text.style.display === "") {
+    text.style.display = "inline";
+    btn.innerHTML = " Read less";
+  } else {
+    text.style.display = "none";
+    btn.innerHTML = "...Read more";
+  }
+
+  console.log(btn)
+
+}
+
+document.querySelector(".read-more-text").addEventListener("click", readMore)
+
+// Initialize Book Shop Swiper Carousel
+document.addEventListener('DOMContentLoaded', function () {
+  const bookSwiper = new Swiper('.book-swiper', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.book-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.book-nav-btn.next',
+      prevEl: '.book-nav-btn.prev',
+    },
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const next = document.querySelector(".rb-next");
+  const prev = document.querySelector(".rb-prev");
+  const slide = document.querySelector(".rb-slide");
+
+  if (!next || !prev || !slide) return;
+
+  let isAnimating = false;
+
+  next.addEventListener("click", function () {
+    if (isAnimating) return;
+    isAnimating = true;
+
+    const items = slide.querySelectorAll(".rb-item");
+    slide.appendChild(items[0]);
+
+    setTimeout(() => {
+      isAnimating = false;
+    }, 700);
+  });
+
+  prev.addEventListener("click", function () {
+    if (isAnimating) return;
+    isAnimating = true;
+
+    const items = slide.querySelectorAll(".rb-item");
+    slide.prepend(items[items.length - 1]);
+
+    setTimeout(() => {
+      isAnimating = false;
+    }, 700);
+  });
+});
+
+/**
+ * features.js  —  Feature Spotlight Slider
+ * Depends on: Swiper 11 (loaded before this file)
+ */
+
+/**
+ * features.js  —  Feature Spotlight Slider
+ * Depends on: Swiper 11 (loaded before this file)
+ *
+ * Toggle ON  → YouTube iframe fills the entire card, content fades out
+ * Toggle OFF → iframe removed, content fades back in
+ */
+
+(function () {
+
+  /* ── Feature data ────────────────────────────────────────────
+     Replace each videoId with your real YouTube video ID.
+     The ID is the part after ?v= in a YouTube URL.
+  ─────────────────────────────────────────────────────────────── */
+  const features = [
+    {
+      title: 'Smart Analytics',
+      desc: 'Real-time insights powered by AI-driven data processing.',
+      icon: `<svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>`,
+      videoId: 'dQw4w9WgXcQ'
+    },
+    {
+      title: 'Cloud Sync',
+      desc: 'Seamless multi-device synchronization with zero latency.',
+      icon: `<svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>`,
+      videoId: 'dQw4w9WgXcQ'
+    },
+    {
+      title: 'Team Workspace',
+      desc: 'Collaborate in real-time with role-based access controls.',
+      icon: `<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+      videoId: 'dQw4w9WgXcQ'
+    },
+    {
+      title: 'Automation',
+      desc: 'Build powerful workflows with our no-code trigger engine.',
+      icon: `<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9l6 6M15 9l-6 6"/></svg>`,
+      videoId: 'dQw4w9WgXcQ'
+    },
+    {
+      title: 'Security',
+      desc: 'Enterprise-grade protection for every layer of your stack.',
+      icon: `<svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+      videoId: 'dQw4w9WgXcQ'
+    },
+    {
+      title: 'AI Assistant',
+      desc: 'Context-aware suggestions that learn from your workflow.',
+      icon: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
+      videoId: 'dQw4w9WgXcQ'
+    }
+  ];
+
+  /* ── Build cards ─────────────────────────────────────────── */
+  function buildCards() {
+    const wrapper = document.getElementById('featureCardWrapper');
+    if (!wrapper) return;
+
+    features.forEach(function (f) {
+      const slide = document.createElement('div');
+      slide.className = 'swiper-slide';
+
+      slide.innerHTML = `
+                <div class="feat-card" data-video-id="${f.videoId}">
+
+                    <div class="card-slit"></div>
+
+                    <div class="card-lumen">
+                        <div class="lumen-mid"></div>
+                        <div class="lumen-hi"></div>
+                    </div>
+
+                    <div class="card-icon">${f.icon}</div>
+
+                    <div class="card-bottom">
+                        <h4>${f.title}</h4>
+                        <p>${f.desc}</p>
+                    </div>
+
+                    <!-- Full-card video overlay (empty until toggle ON) -->
+                    <div class="card-video-overlay"></div>
+
+                    <button class="card-toggle" aria-label="Toggle spotlight">
+                        <div class="handle"></div>
+                    </button>
+
+                </div>`;
+
+      wrapper.appendChild(slide);
+    });
+  }
+
+  /* ── Toggle handlers ─────────────────────────────────────── */
+  function bindToggles() {
+    document.querySelectorAll('.card-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const card = btn.closest('.feat-card');
+        const isOn = card.classList.toggle('is-on');
+        const overlay = card.querySelector('.card-video-overlay');
+        const videoId = card.dataset.videoId;
+
+        if (isOn) {
+          /* Inject full-size iframe — autoplay + mute required by browsers */
+          const iframe = document.createElement('iframe');
+          iframe.src =
+            'https://www.youtube.com/embed/' + videoId +
+            '?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1&controls=1';
+          iframe.allow = 'autoplay; encrypted-media; fullscreen';
+          iframe.allowFullscreen = true;
+          overlay.appendChild(iframe);
+        } else {
+          /* Remove iframe to fully stop playback */
+          const iframe = overlay.querySelector('iframe');
+          if (iframe) iframe.remove();
+        }
+      });
+    });
+  }
+
+  /* ── Stop video on a card and turn it off ────────────────── */
+  function turnOff(card) {
+    card.classList.remove('is-on');
+    const iframe = card.querySelector('iframe');
+    if (iframe) iframe.remove();
+  }
+
+  /* ── Init Swiper ─────────────────────────────────────────── */
+  function initSwiper() {
+    new Swiper('.feat-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        600: { slidesPerView: 1 },
+        900: { slidesPerView: 2 },
+        1200: { slidesPerView: 2 }
+      },
+      /* Stop any playing video when user slides away */
+      on: {
+        slideChange: function () {
+          document.querySelectorAll('.feat-card.is-on').forEach(turnOff);
+        }
+      }
+    });
+  }
+
+  /* ── Boot ────────────────────────────────────────────────── */
+  function init() {
+    buildCards();
+    bindToggles();
+    initSwiper();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();
+
+document.addEventListener('DOMContentLoaded', function () {
+  var toggles = document.querySelectorAll('.mobile-submenu-toggle');
+
+  toggles.forEach(function (toggle) {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      var parentLi = this.closest('li.has-dropdown');
+      if (!parentLi) return;
+
+      var isOpen = parentLi.classList.contains('mobile-open');
+
+      var siblings = parentLi.parentElement ? parentLi.parentElement.children : [];
+      Array.prototype.forEach.call(siblings, function (sibling) {
+        if (sibling !== parentLi && sibling.classList.contains('has-dropdown')) {
+          sibling.classList.remove('mobile-open');
+          var siblingToggle = sibling.querySelector('.mobile-submenu-toggle');
+          if (siblingToggle) siblingToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (isOpen) {
+        parentLi.classList.remove('mobile-open');
+        this.setAttribute('aria-expanded', 'false');
+      } else {
+        parentLi.classList.add('mobile-open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+});

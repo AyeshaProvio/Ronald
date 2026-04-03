@@ -1,0 +1,53 @@
+
+
+@media only screen and (max-width: 1600px) {
+    .navbar-logo {
+        img {
+            width: 160px !important;
+        }
+    }
+    .sf-menu {
+        a {
+            font-size: 13px !important;
+        }
+    }
+    .vlt-navbar-contacts {
+        font-size: 13px !important;
+        padding-right: 5px;
+    }
+    .vlt-navbar-inner {
+        padding: 30px 3.75rem !important;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 52px !important;
+  }
+
+  h3 {
+    font-size: 36px !important;
+    line-height: auto !important;
+  }
+
+  .vlt-post--masonry {
+    height: 400px;
+  }
+
+  .contact-section {
+    address, .tel {
+        font-size: 18px !important;
+    }
+  }
+
+  .home-container {
+    display: flex !important;
+    align-items: end !important;
+  }
+}
+
+
