@@ -139,9 +139,9 @@
 
 										<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
 											style="animation-delay:.2s; animation-duration:700ms;">
-											<h1 class="vlt-large-heading mb-4 sub-h">SYDNEY <span
+											<h2 class="vlt-large-heading mb-4 sub-h">SYDNEY <span
 													class="has-accent-color">AND MARVIN</span>
-											</h1>
+											</h2>
 										</div>
 
 										<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
