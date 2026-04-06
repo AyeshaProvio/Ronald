@@ -3,7 +3,7 @@
 		<div class="vlt-navbar-background"></div>
 		<div class="vlt-navbar-inner">
 			<div class="vlt-navbar-inner--left navbar-logo">
-				<!--Logo--><a class="vlt-navbar-logo" href="index.html"><img src="/assets/img/logo.svg"
+				<!--Logo--><a class="vlt-navbar-logo" href="index.html"><img src="/assets/img/Logo.svg"
 						width="200px" class="img-fluid" alt="Ronald-img"></a>
 			</div>
 			<div class="vlt-navbar-inner--center">

@@ -3,6 +3,7 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .book-showcase-swiper {
@@ -97,6 +98,75 @@
   flex-direction: column;
   gap: 12px;
   margin-top: auto;
+}
+
+/* ===== RESPONSIVE STYLES FOR BOOK SHOWCASE ===== */
+
+@media only screen and (max-width: 768px) {
+  .book-showcase-carousel {
+    padding: 0 10px;
+  }
+
+  .book-showcase-card {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .book-showcase-cover img {
+    height: 200px;
+  }
+
+  .book-showcase-content {
+    padding: 20px;
+  }
+
+  .book-showcase-title {
+    font-size: 20px;
+  }
+
+  .book-showcase-description {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .book-showcase-card {
+    margin: 0 5px;
+  }
+
+  .book-showcase-cover img {
+    height: 180px;
+  }
+
+  .book-showcase-content {
+    padding: 15px;
+  }
+
+  .book-showcase-title {
+    font-size: 18px;
+  }
+
+  .book-showcase-description {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .book-showcase-cover img {
+    height: 150px;
+  }
+
+  .book-showcase-content {
+    padding: 12px;
+  }
+
+  .book-showcase-title {
+    font-size: 16px;
+  }
+
+  .book-showcase-description {
+    font-size: 12px;
+  }
 }
 
 .btn-format {

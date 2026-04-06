@@ -39,7 +39,7 @@
 									<!--Animated Block-->
 									<div class="vlt-animated-block hero-sub" data-animation-name="fadeInUpSm"
 										style="animation-delay:.1s; animation-duration:700ms;"><span
-											class="vlt-display-1 has-white-color mt-3">Hi</span>
+											class="vlt-display-1 has-white-color mt-3">Welcome</span>
 									</div>
 									<!--Animated Block-->
 									<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
@@ -168,7 +168,6 @@
 														alt="barnes-and-noble-logo">
 												</div>
 											</a>
-
 
 											<!--Video button-->
 											<a class="btn btn-amazon" data-menuanchor="Endorsement"
@@ -476,7 +475,7 @@
 								<h3>Purchase Ronald's Books</h3>
 							</div>
 
-							<div class="vlt-gap-100"></div>
+							<div class="vlt-gap-50"></div>
 
 							<div class="rb-slider-shell">
 								<div class="rb-slider-container">
@@ -590,13 +589,13 @@
 											<div class="vlt-post-content">
 												<header class="vlt-post-header"><span class="vlt-post-date">April 1,
 														2024</span>
-													<h3 class="vlt-post-title"><a href="single-post.html">Personal Reflections</a></h3>
+													<h3 class="vlt-post-title"><a href="#">Personal Reflections</a></h3>
 												</header>
 												<div class="vlt-post-excerpt">
 													<p>Exploring the depths of personal growth and introspection through life's journeys. Ronald shares insights from his experiences in South Africa and beyond.</p>
 												</div>
 												<footer class="vlt-post-footer"><a class="vlt-read-more-link"
-														href="single-post.html">
+														href="#">
 														Read more<svg fill="none" xmlns="http://www.w3.org/2000/svg"
 															viewBox="0 0 16 8">
 															<defs />
@@ -623,13 +622,13 @@
 											<div class="vlt-post-content">
 												<header class="vlt-post-header"><span class="vlt-post-date">March 15,
 														2024</span>
-													<h3 class="vlt-post-title"><a href="single-post.html">Ranking of Nations</a></h3>
+													<h3 class="vlt-post-title"><a href="#">Ranking of Nations</a></h3>
 												</header>
 												<div class="vlt-post-excerpt">
 													<p>A thought-provoking analysis of global perspectives and cultural rankings. Ronald delves into what makes nations unique and interconnected.</p>
 												</div>
 												<footer class="vlt-post-footer"><a class="vlt-read-more-link"
-														href="single-post.html">
+														href="#">
 														Read more<svg fill="none" xmlns="http://www.w3.org/2000/svg"
 															viewBox="0 0 16 8">
 															<defs />
@@ -656,13 +655,13 @@
 											<div class="vlt-post-content">
 												<header class="vlt-post-header"><span class="vlt-post-date">February 10,
 														2024</span>
-													<h3 class="vlt-post-title"><a href="single-post.html">Copy of Speech</a></h3>
+													<h3 class="vlt-post-title"><a href="#">Copy of Speech</a></h3>
 												</header>
 												<div class="vlt-post-excerpt">
 													<p>Inspiring words from Ronald's speeches, capturing moments of motivation and reflection. With over 30,000 impressions on LinkedIn.</p>
 												</div>
 												<footer class="vlt-post-footer"><a class="vlt-read-more-link"
-														href="single-post.html">
+														href="#">
 														Read more<svg fill="none" xmlns="http://www.w3.org/2000/svg"
 															viewBox="0 0 16 8">
 															<defs />
@@ -733,8 +732,18 @@
 													<h4>Bitter and Bordeaux</h4>
 													<p>A light romance novel based on life at a North England Brewery. Follow the characters as they navigate the frothy challenges of brewery life, discovering love in unexpected places.</p>
 													<a href="#" class="btn btn-amazon">
-														<span>Buy on</span>
-														<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
+														<ul class="book-features-ul">
+															<li>Light-hearted romance set in a brewery</li>
+															<li>Explores themes of love and unexpected connections</li>
+															<li>Based on real-life inspirations from North England</li>
+															<li>Follows the adventures of brewery workers finding romance amidst hops and barrels</li>
+															<li>Blends humor and heartfelt moments in a charming North England setting</li>
+															<li>Perfect for fans of cozy romances with a touch of British charm</li>
+														</ul>
+														<div class="buy-btn">
+															<span>Available On</span>
+															<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
+														</div>
 													</a>
 												</div>
 											</div>
@@ -742,14 +751,24 @@
 										<div class="swiper-slide">
 											<div class="book-item">
 												<div class="book-image">
-													<img src="/assets/img/but-daddy-cover.jpg" alt="But Daddy, What is a Jew?" class="img-fluid">
+													<img src="/assets/img/book2x.png" alt="But Daddy, What is a Jew?" class="img-fluid">
 												</div>
 												<div class="book-content">
-													<h4>But Daddy, What is a Jew?</h4>
-													<p>A poignant modern history book based on the dramatized journal of a Jewish teenager during the Occupation of France (1940-1944). Exploring themes of identity, survival, and human spirit.</p>
+													<h4>Bitter and Bordeaux</h4>
+													<p>A light romance novel based on life at a North England Brewery. Follow the characters as they navigate the frothy challenges of brewery life, discovering love in unexpected places.</p>
 													<a href="#" class="btn btn-amazon">
-														<span>Buy on</span>
-														<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
+														<ul class="book-features-ul">
+															<li>Light-hearted romance set in a brewery</li>
+															<li>Explores themes of love and unexpected connections</li>
+															<li>Based on real-life inspirations from North England</li>
+															<li>Follows the adventures of brewery workers finding romance amidst hops and barrels</li>
+															<li>Blends humor and heartfelt moments in a charming North England setting</li>
+															<li>Perfect for fans of cozy romances with a touch of British charm</li>
+														</ul>
+														<div class="buy-btn">
+															<span>Available On</span>
+															<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
+														</div>
 													</a>
 												</div>
 											</div>

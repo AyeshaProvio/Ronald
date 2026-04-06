@@ -1,19 +1,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!--Favicon-->
-<link rel="icon" type="image/svg" href="assets/img/fav-icon.png">
+<link rel="icon" type="image/svg" href="/assets/img/fav-icon.PNG">
 <!--Framework-->
-<link rel="stylesheet" href="assets/css/framework/bootstrap.min.css">
-<!--Fonts-->
-<!-- <link rel="stylesheet" href="assets/fonts/Gilroy/style.css"> -->
+<link rel="stylesheet" href="/assets/css/framework/bootstrap.min.css">
 <!--Icons-->
-<link rel="stylesheet" href="assets/fonts/LineIcons/Pro-Regular/font-css/LineIcons.css">
+<link rel="stylesheet" href="/assets/fonts/LineIcons/Pro-Regular/font-css/LineIcons.css">
 <!--Plugins-->
-<link rel="stylesheet" href="assets/css/vlt-plugins.min.css">
+<link rel="stylesheet" href="/assets/css/vlt-plugins.min.css">
 <!--Style-->
-<link rel="stylesheet" href="assets/css/vlt-main.min.css">
+<link rel="stylesheet" href="/assets/css/vlt-main.min.css">
 <!--Custom-->
-<link rel="stylesheet" href="assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/custom.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
 <!--Book Showcase-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

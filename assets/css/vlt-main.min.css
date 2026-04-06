@@ -1579,7 +1579,7 @@ textarea:focus::-webkit-input-placeholder {
   left: 0;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 495px;
 }
 .vlt-post--masonry .vlt-post-media::before {
   position: absolute;
@@ -2564,7 +2564,7 @@ textarea:focus::-webkit-input-placeholder {
   margin-top: 4.375rem;
 }
 .vlt-testimonial__name {
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .vlt-testimonial__function {
   font-size: 0.9375rem;
