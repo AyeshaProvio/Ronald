@@ -1656,6 +1656,7 @@ canvas {
   }
 }
 
+
 @media (min-width: 1025px) and (max-width: 1366px) {
   .rb-slider-container {
     height: 356px;
@@ -1686,11 +1687,11 @@ canvas {
 
     .card-bottom p {
       line-height: 1.4;
-      font-size: 0.85rem;
+      font-size: .85rem;
     }
   }
 
-  .vlt-default-menu__navigation .sf-menu > li + li {
+  .vlt-default-menu__navigation .sf-menu>li+li {
     margin-left: 1.8rem;
   }
 
@@ -1699,6 +1700,7 @@ canvas {
   }
 
   .blog-section {
+
     .vlt-post--masonry,
     .vlt-post-media {
       height: 400px;
@@ -1712,4 +1714,5 @@ canvas {
       margin-top: 0;
     }
   }
+
 }
