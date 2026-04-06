@@ -121,7 +121,7 @@
 						<!--Projects-->
 
 						<div class="vlt-section__ken-burn-background has-mobile-image">
-							<img src="/assets/img/book1-banner.jpg" alt="book1-img">
+							<img src="/assets/img/banner.png" alt="book1-img">
 						</div>
 
 						<div class="container-fluid">
@@ -584,7 +584,7 @@
 											<div class="vlt-post-border"><span class="top"></span><span
 													class="right"></span><span class="bottom"></span><span
 													class="left"></span></div>
-											<div class="vlt-post-media"><img src="/assets/img/story-01.jpg" alt=""
+											<div class="vlt-post-media"><img src="/assets/img/illustration-1.jpg" alt=""
 													loading="lazy"></div>
 											<div class="vlt-post-content">
 												<header class="vlt-post-header"><span class="vlt-post-date">April 1,
@@ -617,7 +617,7 @@
 											<div class="vlt-post-border"><span class="top"></span><span
 													class="right"></span><span class="bottom"></span><span
 													class="left"></span></div>
-											<div class="vlt-post-media"><img src="/assets/img/story-02.jpg" alt=""
+											<div class="vlt-post-media"><img src="/assets/img/illustration-2.jpg" alt=""
 													loading="lazy"></div>
 											<div class="vlt-post-content">
 												<header class="vlt-post-header"><span class="vlt-post-date">March 15,
@@ -650,7 +650,7 @@
 											<div class="vlt-post-border"><span class="top"></span><span
 													class="right"></span><span class="bottom"></span><span
 													class="left"></span></div>
-											<div class="vlt-post-media"><img src="/assets/img/story-03.jpg" alt=""
+											<div class="vlt-post-media"><img src="/assets/img/illustration-3.jpg" alt=""
 													loading="lazy"></div>
 											<div class="vlt-post-content">
 												<header class="vlt-post-header"><span class="vlt-post-date">February 10,
