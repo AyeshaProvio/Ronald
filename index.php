@@ -4,8 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Ronald - Homepage</title>
-	<meta name="description"
-		content="Discover Ronald's captivating stories blending humor, reflection, and realism. Explore his books, journey, and connect with the author.">
+	<meta name="description" content="Discover Ronald's captivating stories blending humor, reflection, and realism. Explore his books, journey, and connect with the author.">
 	<?php include "./includes/meta.php" ?>
 </head>
 
@@ -25,8 +24,7 @@
 					<div class="vlt-section__content home-container">
 						<!--Ken Burn Effect-->
 						<div class="vlt-section__ken-burn-background has-mobile-image"><img
-								src="/assets/img/ronald-home.png" alt=""><img src="/assets/img/ronald-mobile.jpg"
-								alt="">
+								src="/assets/img/ronald-home.png" alt=""><img src="/assets/img/ronald-mobile.jpg" alt="">
 						</div>
 						<div class="container">
 							<div class="row">
@@ -52,17 +50,12 @@
 									<!--Animated Block-->
 									<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
 										style="animation-delay:.3s; animation-duration:700ms;">
-										<p><strong class="text-white">I believe in the power of stories to connect us,
-												even
+										<p><strong class="text-white">I believe in the power of stories to connect us, even
 												when the world feels divided.</strong> <br>
 											<span class="more-text">
-												Through humor, reflection, and realism, I explore the depths of human
-												experience,
-												drawing from my journey in South Africa, charity work, and the
-												adventures that shape our lives.
-												Things are not always as they seem; sometimes, the truth reveals itself
-												through unexpected tales</span> <span
-												class="text-white read-more-text">...Read more</span>
+												Through humor, reflection, and realism, I explore the depths of human experience,
+												drawing from my journey in South Africa, charity work, and the adventures that shape our lives.
+												Things are not always as they seem; sometimes, the truth reveals itself through unexpected tales</span> <span class="text-white read-more-text">...Read more</span>
 										</p>
 									</div>
 								</div>
@@ -84,7 +77,8 @@
 									<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
 										style="animation-delay:0s; animation-duration:700ms;">
 										<div class="vlt-experience-block p-2 about-img">
-											<img src="/assets/img/ronald-author.jpg" class="img-fluid" alt="author-img">
+											<img src="/assets/img/ronald-author.jpg" class="img-fluid"
+												alt="author-img">
 										</div>
 									</div>
 									<div class="vlt-gap-50--lg"></div>
@@ -100,10 +94,7 @@
 									<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
 										style="animation-delay:.3s; animation-duration:700ms;">
 										<!--Progress Bar-->
-										<p class="w-100">Ronald's unique journey began in South Africa, where he gained
-											invaluable life experiences that shaped his worldview. His commitment to
-											storytelling extends to his charity work supporting the British Military,
-											reflecting his dedication to service and community.</p>
+										<p class="w-100">Ronald's unique journey began in South Africa, where he gained invaluable life experiences that shaped his worldview. His commitment to storytelling extends to his charity work supporting the British Military, reflecting his dedication to service and community.</p>
 									</div>
 									<div class="vlt-gap-15"></div>
 									<!--Animated Block-->
@@ -111,11 +102,7 @@
 										style="animation-delay:.4s; animation-duration:700ms;">
 										<!--Progress Bar-->
 										<p class="w-100">
-											Mentored by Gareth Randall and David Norris, Ronald honed his craft as a
-											writer. He is deeply grateful for the support of Ghost Writing Galaxy (GWG),
-											whose team has significantly improved his writing and been a major influence
-											on his work. Ronald's stories blend humor, reflection, and realism, offering
-											readers engaging narratives across genres.
+											Mentored by Gareth Randall and David Norris, Ronald honed his craft as a writer. He is deeply grateful for the support of Ghost Writing Galaxy (GWG), whose team has significantly improved his writing and been a major influence on his work. Ronald's stories blend humor, reflection, and realism, offering readers engaging narratives across genres.
 										</p>
 									</div>
 
@@ -128,8 +115,7 @@
 
 
 			<!--Books-->
-			<div class="vlt-section pp-scrollable book-section section book-section-1" data-theme="default"
-				data-anchor="Book">
+			<div class="vlt-section pp-scrollable book-section section book-section-1" data-theme="default" data-anchor="Book">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<!--Projects-->
@@ -160,10 +146,7 @@
 
 										<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
 											style="animation-delay:.2s; animation-duration:700ms;">
-											<h4 class="vlt-large-heading mb-4"><em>Two Seagulls meet by accident on the
-													North Coast of France near a Ferry Port, one is a young English bird
-													(Sydney) and the Other is a wise, experienced old French bird
-													(Marvin).</em>
+											<h4 class="vlt-large-heading mb-4"><em>Two Seagulls meet by accident on the North Coast of France near a Ferry Port, one is a young English bird (Sydney) and the Other is a wise, experienced old French bird (Marvin).</em>
 											</h4>
 										</div>
 
@@ -171,19 +154,10 @@
 											data-animation-name="fadeInUpSm"
 											style="animation-delay:.3s; animation-duration:700ms;">
 											<p class="">
-												Lorem Ipsum is simply dummy text of the printing and typesetting
-												industry. Lorem Ipsum has been the industry's standard dummy text ever
-												since the 1500s, when an unknown printer took a galley of type and
-												scrambled it to make a type specimen book.
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 											</p>
 
-											<p class="mb-4">It was popularised in the 1960s with the release of Letraset
-												sheets containing Lorem Ipsum passages, and more recently with desktop
-												publishing software like Aldus PageMaker including versions of Lorem
-												Ipsum.It was popularised in the 1960s with the release of Letraset
-												sheets containing Lorem Ipsum passages, and more recently with desktop
-												publishing software like Aldus PageMaker including versions of Lorem
-												Ipsum.</p>
+											<p class="mb-4">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 										</div>
 
 										<div class="btns">
@@ -222,8 +196,7 @@
 								style="animation-delay:0s; animation-duration:700ms;">
 								<h3>Screenplays</h3>
 								<div class="vlt-gap-20"></div>
-								<p>Explore what makes our platform exceptional. Toggle any card to illuminate its
-									capabilities.</p>
+								<p>Explore what makes our platform exceptional. Toggle any card to illuminate its capabilities.</p>
 							</div>
 
 							<div class="vlt-gap-50"></div>
@@ -391,8 +364,7 @@
 													d="M25 0C16.9271 0 10.7422 2.14844 6.44531 6.44531 2.14844 10.7422 0 16.9271 0 25v50h31.25V25H12.5c0-4.4271.9766-7.6172 2.9297-9.5703C17.3828 13.4766 20.5729 12.5 25 12.5V0zm43.75 0c-8.0729 0-14.2578 2.14844-18.5547 6.44531C45.8984 10.7422 43.75 16.9271 43.75 25v50H75V25H56.25c0-4.4271.9766-7.6172 2.9297-9.5703C61.1328 13.4766 64.3229 12.5 68.75 12.5V0z" />
 											</svg>
 											<div class="vlt-gap-215 vlt-gap-100--lg"></div>
-											<h3>Creative & dedicated storytelling that Ronald brings to his readers.
-											</h3>
+											<h3>Creative & dedicated storytelling that Ronald brings to his readers.</h3>
 										</div>
 									</div>
 								</div>
@@ -499,8 +471,7 @@
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<div class="container">
-							<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
-								style="animation-delay:0s; animation-duration:700ms;">
+							<div class="vlt-animated-block" data-animation-name="fadeInUpSm" style="animation-delay:0s; animation-duration:700ms;">
 								<h3>Purchase Ronald's Books</h3>
 							</div>
 
@@ -511,8 +482,7 @@
 									<div class="rb-slide">
 
 										<!-- Book 1 -->
-										<div class="rb-item"
-											style="background-image: url('/assets/img/book1-banner.jpg');">
+										<div class="rb-item" style="background-image: url('/assets/img/book1-banner.jpg');">
 											<div class="rb-item-overlay"></div>
 											<div class="rb-item-content">
 												<!-- <div class="rb-book-cover-wrap">
@@ -522,8 +492,7 @@
 												<div class="rb-text-content">
 													<h3 class="rb-name">BUT DADDY</h3>
 													<p class="rb-des">
-														An emotional family story exploring love, loss, and
-														reconciliation through powerful relationships.
+														An emotional family story exploring love, loss, and reconciliation through powerful relationships.
 													</p>
 													<div class="rb-actions">
 														<a href="#" class="rb-btn">Paperback</a>
@@ -545,8 +514,7 @@
 												<div class="rb-text-content">
 													<h3 class="rb-name">BITTER AND BORDEAUX</h3>
 													<p class="rb-des">
-														A light romance novel based on life at a North England Brewery,
-														where love appears in unexpected places.
+														A light romance novel based on life at a North England Brewery, where love appears in unexpected places.
 													</p>
 													<div class="rb-actions">
 														<a href="#" class="rb-btn">Paperback</a>
@@ -568,8 +536,7 @@
 												<div class="rb-text-content">
 													<h3 class="rb-name">A LIFE TOO EXTRAORDINARY TO BE FICTION</h3>
 													<p class="rb-des">
-														Set against powerful seas and dangerous realities, this is a
-														gripping story of courage and survival.
+														Set against powerful seas and dangerous realities, this is a gripping story of courage and survival.
 													</p>
 													<div class="rb-actions">
 														<a href="#" class="rb-btn">Paperback</a>
@@ -625,11 +592,10 @@
 													<h3 class="vlt-post-title"><a href="#">Personal Reflections</a></h3>
 												</header>
 												<div class="vlt-post-excerpt">
-													<p>Exploring the depths of personal growth and introspection through
-														life's journeys. Ronald shares insights from his experiences in
-														South Africa and beyond.</p>
+													<p>Exploring the depths of personal growth and introspection through life's journeys. Ronald shares insights from his experiences in South Africa and beyond.</p>
 												</div>
-												<footer class="vlt-post-footer"><a class="vlt-read-more-link" href="#">
+												<footer class="vlt-post-footer"><a class="vlt-read-more-link"
+														href="#">
 														Read more<svg fill="none" xmlns="http://www.w3.org/2000/svg"
 															viewBox="0 0 16 8">
 															<defs />
@@ -659,11 +625,10 @@
 													<h3 class="vlt-post-title"><a href="#">Ranking of Nations</a></h3>
 												</header>
 												<div class="vlt-post-excerpt">
-													<p>A thought-provoking analysis of global perspectives and cultural
-														rankings. Ronald delves into what makes nations unique and
-														interconnected.</p>
+													<p>A thought-provoking analysis of global perspectives and cultural rankings. Ronald delves into what makes nations unique and interconnected.</p>
 												</div>
-												<footer class="vlt-post-footer"><a class="vlt-read-more-link" href="#">
+												<footer class="vlt-post-footer"><a class="vlt-read-more-link"
+														href="#">
 														Read more<svg fill="none" xmlns="http://www.w3.org/2000/svg"
 															viewBox="0 0 16 8">
 															<defs />
@@ -693,11 +658,10 @@
 													<h3 class="vlt-post-title"><a href="#">Copy of Speech</a></h3>
 												</header>
 												<div class="vlt-post-excerpt">
-													<p>Inspiring words from Ronald's speeches, capturing moments of
-														motivation and reflection. With over 30,000 impressions on
-														LinkedIn.</p>
+													<p>Inspiring words from Ronald's speeches, capturing moments of motivation and reflection. With over 30,000 impressions on LinkedIn.</p>
 												</div>
-												<footer class="vlt-post-footer"><a class="vlt-read-more-link" href="#">
+												<footer class="vlt-post-footer"><a class="vlt-read-more-link"
+														href="#">
 														Read more<svg fill="none" xmlns="http://www.w3.org/2000/svg"
 															viewBox="0 0 16 8">
 															<defs />
@@ -747,8 +711,7 @@
 				</div>
 			</div> -->
 
-			<div class="vlt-section pp-scrollable featured-works-section section" data-theme="default"
-				data-anchor="FeaturedWorks">
+			<div class="vlt-section pp-scrollable featured-works-section section" data-theme="default" data-anchor="FeaturedWorks">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<div class="container">
@@ -756,95 +719,74 @@
 								style="animation-delay:0s; animation-duration:700ms;">
 								<h3>Featured Works</h3>
 							</div>
-
-							<div class="vlt-content-slider" data-navigation-anchor=".vlt-featured-anchor" data-effect=""
-								data-gap="120" data-loop="" data-speed="" data-autoplay="" data-autoplay-speed=""
-								data-slides-centered="" data-slide-settings="{}" data-free-mode="" data-slider-offset=""
-								data-mousewheel="">
+							
+							<div class="vlt-content-slider" data-navigation-anchor=".vlt-featured-anchor" data-effect="" data-gap="120" data-loop="" data-speed="" data-autoplay="" data-autoplay-speed="" data-slides-centered="" data-slide-settings="{}" data-free-mode="" data-slider-offset="" data-mousewheel="">
 								<div class="swiper-container">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
 											<div class="book-item">
 												<div class="book-image">
-													<img src="/assets/img/book2x.png" alt="Bitter and Bordeaux"
-														class="img-fluid">
+													<img src="/assets/img/book2x.png" alt="Bitter and Bordeaux" class="img-fluid">
 												</div>
 												<div class="book-content">
 													<h4>Bitter and Bordeaux</h4>
-													<p>A light romance novel based on life at a North England Brewery.
-														Follow the characters as they navigate the frothy challenges of
-														brewery life, discovering love in unexpected places.</p>
-													<div class="">
+													<p>A light romance novel based on life at a North England Brewery. Follow the characters as they navigate the frothy challenges of brewery life, discovering love in unexpected places.</p>
+													<a href="#" class="btn btn-amazon">
 														<ul class="book-features-ul">
 															<li>Light-hearted romance set in a brewery</li>
 															<li>Explores themes of love and unexpected connections</li>
 															<li>Based on real-life inspirations from North England</li>
-															<li>Follows the adventures of brewery workers finding
-																romance amidst hops and barrels</li>
-															<li>Blends humor and heartfelt moments in a charming North
-																England setting</li>
-															<li>Perfect for fans of cozy romances with a touch of
-																British charm</li>
+															<li>Follows the adventures of brewery workers finding romance amidst hops and barrels</li>
+															<li>Blends humor and heartfelt moments in a charming North England setting</li>
+															<li>Perfect for fans of cozy romances with a touch of British charm</li>
 														</ul>
 														<div class="buy-btn">
 															<span>Available On</span>
-															<img src="/assets/img/amazon-logo.png" width="60"
-																alt="Amazon">
+															<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
 														</div>
-													</div>
+													</a>
 												</div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="book-item">
 												<div class="book-image">
-													<img src="/assets/img/book2x.png" alt="But Daddy, What is a Jew?"
-														class="img-fluid">
+													<img src="/assets/img/book2x.png" alt="But Daddy, What is a Jew?" class="img-fluid">
 												</div>
 												<div class="book-content">
 													<h4>Bitter and Bordeaux</h4>
-													<p>A light romance novel based on life at a North England Brewery.
-														Follow the characters as they navigate the frothy challenges of
-														brewery life, discovering love in unexpected places.</p>
-													<div>
+													<p>A light romance novel based on life at a North England Brewery. Follow the characters as they navigate the frothy challenges of brewery life, discovering love in unexpected places.</p>
+													<a href="#" class="btn btn-amazon">
 														<ul class="book-features-ul">
 															<li>Light-hearted romance set in a brewery</li>
 															<li>Explores themes of love and unexpected connections</li>
 															<li>Based on real-life inspirations from North England</li>
-															<li>Follows the adventures of brewery workers finding
-																romance amidst hops and barrels</li>
-															<li>Blends humor and heartfelt moments in a charming North
-																England setting</li>
-															<li>Perfect for fans of cozy romances with a touch of
-																British charm</li>
+															<li>Follows the adventures of brewery workers finding romance amidst hops and barrels</li>
+															<li>Blends humor and heartfelt moments in a charming North England setting</li>
+															<li>Perfect for fans of cozy romances with a touch of British charm</li>
 														</ul>
 														<div class="buy-btn">
 															<span>Available On</span>
-															<img src="/assets/img/amazon-logo.png" width="60"
-																alt="Amazon">
+															<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
 														</div>
-</div>
+													</a>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
+							
 							<div class="vlt-slider-controls vlt-slider-controls--style-2 vlt-featured-anchor">
 								<div class="vlt-swiper-pagination text-center"></div>
 								<div class="vlt-swiper-button-prev">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 45">
-										<path fill="currentColor" fill-rule="evenodd"
-											d="M1.36413 22.5795L24 43.9524l-.7271.6865L.272896 22.9223l.383716-.3623-.362754-.3367L23.0941.319721l.733.680233L1.36413 22.5795z"
-											clip-rule="evenodd" />
+										<path fill="currentColor" fill-rule="evenodd" d="M1.36413 22.5795L24 43.9524l-.7271.6865L.272896 22.9223l.383716-.3623-.362754-.3367L23.0941.319721l.733.680233L1.36413 22.5795z" clip-rule="evenodd" />
 									</svg>
 								</div>
 								<div class="vlt-swiper-button-next">
 									<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 45">
-										<path fill-rule="evenodd" clip-rule="evenodd"
-											d="M22.6359 22.3728L0 1.00001.727101.313477 23.7271 22.0301l-.3837.3623.3627.3367L.905866 44.6327l-.732997-.6803L22.6359 22.3728z"
-											fill="currentColor" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M22.6359 22.3728L0 1.00001.727101.313477 23.7271 22.0301l-.3837.3623.3627.3367L.905866 44.6327l-.732997-.6803L22.6359 22.3728z" fill="currentColor" />
 									</svg>
 								</div>
 							</div>
@@ -885,7 +827,8 @@
 											Use the form or below given email address to send your words across the
 											veil, and I’ll respond as soon as they reach me.</p>
 										<div class="vlt-gap-20"></div>
-										<p><a class="email" href="mailto:contact@ronald.com">contact@ronald.com</a></p>
+										<p><a class="email"
+												href="mailto:contact@ronald.com">contact@ronald.com</a></p>
 									</div>
 								</div>
 								<div class="col-xl-6 offset-xl-2">
