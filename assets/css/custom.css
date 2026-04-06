@@ -34,8 +34,6 @@
   }
 }
 
-
-
 .read-more-text {
   display: none;
 }
@@ -53,7 +51,6 @@
   h1 {
     font-size: 80px !important;
     margin-bottom: 0px;
-
   }
 
   .ps {
@@ -72,8 +69,6 @@
     font-size: 16px !important;
     line-height: 25px !important;
   }
-
-
 }
 
 .book-section .btn-amazon {
@@ -86,8 +81,6 @@
   border: 2px solid white;
   padding: 10px 40px;
   border-radius: 60px;
-
-
 
   &:hover {
     background-color: #333;
@@ -181,7 +174,11 @@ canvas {
 }
 
 .book-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.9) 100%
+  );
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(20px);
@@ -222,7 +219,11 @@ canvas {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -361,12 +362,14 @@ canvas {
   margin-top: 30px;
 }
 
-
-
 .book-nav-btn {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   color: #333;
@@ -379,7 +382,11 @@ canvas {
 }
 
 .book-nav-btn:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
   transform: scale(1.1);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
@@ -440,6 +447,29 @@ canvas {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .vlt-navbar .vlt-navbar-inner {
+    padding: 20px !important;
+  }
+
+  .book-section {
+    h1 {
+      font-size: 55px !important;
+        }
+  }
+
+  .btn-amazon {
+    font-size: 14px !important;
+    padding: 10px 20px !important;
+    line-height: normal !important;
+    img {
+      width: 80px !important;
+    }
+  }
+
+  .vlt-navbar .vlt-navbar-logo img {
+    margin: 0px !important;
+  }
+
   .book-card {
     max-width: 280px;
     margin: 0 5px;
@@ -473,6 +503,66 @@ canvas {
   .book-nav-btn svg {
     width: 18px;
     height: 18px;
+  }
+
+  .about-section {
+    p {
+      font-size: 14px !important;
+    }
+    .about-text {
+      padding-left: 20px;
+    }
+  }
+
+  /* Kill the full-page height and absolute positioning */
+  .vlt-fullpage-slider,
+  .vlt-section,
+  .pp-section {
+    height: auto !important;
+    position: relative !important;
+    top: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Restore natural scrolling to the container */
+  html,
+  body,
+  #vlt-main,
+  .vlt-fullpage-slider {
+    overflow: visible !important;
+    height: auto !important;
+    touch-action: auto !important;
+  }
+
+
+
+  .vlt-fullpage-slider .vlt-section__content {
+    height: auto !important;
+    padding: 50px 0px !important;
+  }
+
+
+  .vlt-fullpage-slider .home-container {
+    height: auto !important;
+    padding: 120px 0px !important;
+  }
+
+  
+
+  /* Hide the dots navigation on mobile */
+  .pp-nav,
+  .vlt-fullpage-slider-progress-bar {
+    display: none !important;
+  }
+
+  /* Ensure backgrounds and content don't overlap */
+  .vlt-section__vertical-align {
+    display: block !important;
+    /* padding-top: 80px !important; Space for your fixed header */
+    /* padding-bottom: 50px !important; */
   }
 }
 
@@ -541,7 +631,9 @@ canvas {
   overflow: hidden;
   background: #ffffff;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -730,7 +822,9 @@ canvas {
 .book-showcase-swiper .swiper-slide {
   opacity: 0.65;
   transform: scale(0.94);
-  transition: transform 0.35s ease, opacity 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
 }
 
 .book-showcase-swiper .swiper-slide-active,
@@ -789,7 +883,6 @@ canvas {
   }
 }
 
-
 /*--------------------------------
    RONALD BOOK SLIDER STYLE
    -----------------------------*/
@@ -843,7 +936,12 @@ canvas {
 .rb-item-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0, 0, 0, .58) 0%, rgba(0, 0, 0, .18) 46%, rgba(0, 0, 0, .06) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.58) 0%,
+    rgba(0, 0, 0, 0.18) 46%,
+    rgba(0, 0, 0, 0.06) 100%
+  );
   z-index: 1;
 }
 
@@ -901,7 +999,7 @@ canvas {
   max-height: 370px;
   width: auto;
   display: block;
-  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, .28));
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.28));
 }
 
 .rb-text-content {
@@ -957,7 +1055,9 @@ canvas {
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  transition: transform .25s ease, background .25s ease;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
 }
 
 .rb-btn:hover {
@@ -1105,8 +1205,6 @@ canvas {
   }
 }
 
-
-
 /*-------------------------------
   newsletter section
    -----------------------------*/
@@ -1118,9 +1216,6 @@ canvas {
   }
 }
 
-
-
-
 /* ============================================================
    features.css  —  Feature Spotlight Slider Section
    ============================================================ */
@@ -1130,7 +1225,12 @@ canvas {
   background: radial-gradient(circle at 50% 70%, #2a2a2a 0%, #131313 64%);
 }
 
-.features-section>.vlt-section__vertical-align>.vlt-section__content>.container>.vlt-animated-block>p {
+.features-section
+  > .vlt-section__vertical-align
+  > .vlt-section__content
+  > .container
+  > .vlt-animated-block
+  > p {
   color: rgba(255, 255, 255, 0.55);
   line-height: 1.7;
 }
@@ -1158,7 +1258,9 @@ canvas {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  transition: translate 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    translate 0.4s ease,
+    box-shadow 0.4s ease;
   cursor: default;
   overflow: hidden;
 }
@@ -1178,7 +1280,9 @@ canvas {
   border-top: 1px solid #333;
   border-bottom: 1px solid #000;
   border-radius: 0.2rem;
-  transition: background 0.5s, box-shadow 0.5s;
+  transition:
+    background 0.5s,
+    box-shadow 0.5s;
 }
 
 /* ── Lumen beam ── */
@@ -1233,7 +1337,10 @@ canvas {
   justify-content: center;
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: filter 0.5s, transform 0.5s, opacity 0.4s;
+  transition:
+    filter 0.5s,
+    transform 0.5s,
+    opacity 0.4s;
   z-index: 3;
 }
 
@@ -1252,7 +1359,9 @@ canvas {
 .card-bottom {
   position: relative;
   z-index: 10;
-  transition: opacity 0.4s, transform 0.4s;
+  transition:
+    opacity 0.4s,
+    transform 0.4s;
 }
 
 .card-bottom h4 {
@@ -1260,7 +1369,9 @@ canvas {
   font-weight: 400;
   color: #ccc;
   margin-bottom: 0.5rem;
-  transition: color 0.4s, text-shadow 0.4s;
+  transition:
+    color 0.4s,
+    text-shadow 0.4s;
 }
 
 .card-bottom p {
@@ -1293,7 +1404,7 @@ canvas {
 
 /* Dark gradient at bottom so toggle is readable over video */
 .card-video-overlay::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1325,7 +1436,7 @@ canvas {
 }
 
 .card-toggle::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -1337,7 +1448,9 @@ canvas {
   height: 0.6rem;
   border-radius: 0.15rem;
   background: #000;
-  transition: background 0.4s, box-shadow 0.4s;
+  transition:
+    background 0.4s,
+    box-shadow 0.4s;
 }
 
 .card-toggle .handle {
@@ -1355,7 +1468,10 @@ canvas {
     inset 0 -1px 1px rgba(0, 0, 0, 0.63),
     0 0 1px 1px rgba(0, 0, 0, 0.19),
     1px 3px 6px rgba(0, 0, 0, 0.63);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s, box-shadow 0.4s;
+  transition:
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.4s,
+    box-shadow 0.4s;
 }
 
 /* ============================================================
@@ -1467,11 +1583,14 @@ canvas {
   padding: 0;
 }
 
-.vlt-default-menu__navigation .custom-desktop-menu>li {
+.vlt-default-menu__navigation .custom-desktop-menu > li {
   position: relative;
 }
 
-.vlt-default-menu__navigation .custom-desktop-menu>li.has-dropdown>a::after {
+.vlt-default-menu__navigation
+  .custom-desktop-menu
+  > li.has-dropdown
+  > a::after {
   content: "";
   display: inline-block;
   width: 7px;
@@ -1483,7 +1602,7 @@ canvas {
   vertical-align: middle;
 }
 
-.vlt-default-menu__navigation .custom-desktop-menu>li>.custom-submenu {
+.vlt-default-menu__navigation .custom-desktop-menu > li > .custom-submenu {
   text-align: left;
   position: absolute;
   top: 100%;
@@ -1499,12 +1618,18 @@ canvas {
   visibility: hidden;
   pointer-events: none;
   transform: translateY(8px);
-  transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
   z-index: 9999;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
 }
 
-.vlt-default-menu__navigation .custom-desktop-menu>li>.custom-submenu::before {
+.vlt-default-menu__navigation
+  .custom-desktop-menu
+  > li
+  > .custom-submenu::before {
   content: "";
   position: absolute;
   top: -14px;
@@ -1513,15 +1638,21 @@ canvas {
   height: 14px;
 }
 
-.vlt-default-menu__navigation .custom-desktop-menu>li.has-dropdown:hover>.custom-submenu,
-.vlt-default-menu__navigation .custom-desktop-menu>li.has-dropdown:focus-within>.custom-submenu {
+.vlt-default-menu__navigation
+  .custom-desktop-menu
+  > li.has-dropdown:hover
+  > .custom-submenu,
+.vlt-default-menu__navigation
+  .custom-desktop-menu
+  > li.has-dropdown:focus-within
+  > .custom-submenu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-.vlt-default-menu__navigation .custom-desktop-menu>li>.custom-submenu li a {
+.vlt-default-menu__navigation .custom-desktop-menu > li > .custom-submenu li a {
   display: block;
   padding: 10px 18px;
   text-decoration: none;
@@ -1530,16 +1661,21 @@ canvas {
   color: #fff;
 }
 
-.vlt-default-menu__navigation .custom-desktop-menu>li>.custom-submenu li a:hover {
+.vlt-default-menu__navigation
+  .custom-desktop-menu
+  > li
+  > .custom-submenu
+  li
+  a:hover {
   background: rgba(255, 255, 255, 0.06);
 }
 
 /* ---------- MOBILE / OFFCANVAS ---------- */
-.vlt-offcanvas-menu__navigation .custom-mobile-menu>li {
+.vlt-offcanvas-menu__navigation .custom-mobile-menu > li {
   position: relative;
 }
 
-.vlt-offcanvas-menu__navigation .custom-mobile-menu>li.has-dropdown>a {
+.vlt-offcanvas-menu__navigation .custom-mobile-menu > li.has-dropdown > a {
   display: none;
 }
 
@@ -1551,7 +1687,7 @@ canvas {
   width: 100%;
 }
 
-.vlt-offcanvas-menu__navigation .mobile-parent-row>a {
+.vlt-offcanvas-menu__navigation .mobile-parent-row > a {
   flex: 1 1 auto;
 }
 
@@ -1576,24 +1712,36 @@ canvas {
   border-right: 1.5px solid currentColor;
   border-bottom: 1.5px solid currentColor;
   transform: translate(-50%, -60%) rotate(45deg);
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
 }
 
-.vlt-offcanvas-menu__navigation .custom-mobile-menu>li>.custom-submenu {
+.vlt-offcanvas-menu__navigation .custom-mobile-menu > li > .custom-submenu {
   display: none;
   padding-left: 14px;
   padding-top: 8px;
 }
 
-.vlt-offcanvas-menu__navigation .custom-mobile-menu>li.mobile-open>.custom-submenu {
+.vlt-offcanvas-menu__navigation
+  .custom-mobile-menu
+  > li.mobile-open
+  > .custom-submenu {
   display: block;
 }
 
-.vlt-offcanvas-menu__navigation .custom-mobile-menu>li.mobile-open>.mobile-parent-row .mobile-submenu-toggle::before {
+.vlt-offcanvas-menu__navigation
+  .custom-mobile-menu
+  > li.mobile-open
+  > .mobile-parent-row
+  .mobile-submenu-toggle::before {
   transform: translate(-50%, -30%) rotate(-135deg);
 }
 
-.vlt-offcanvas-menu__navigation .custom-mobile-menu>li>.custom-submenu li a {
+.vlt-offcanvas-menu__navigation
+  .custom-mobile-menu
+  > li
+  > .custom-submenu
+  li
+  a {
   display: block;
   padding: 7px 0;
   text-decoration: none;
@@ -1601,11 +1749,13 @@ canvas {
 }
 
 @media (max-width: 991.98px) {
-  .vlt-default-menu__navigation .custom-desktop-menu>li.has-dropdown>.custom-submenu {
+  .vlt-default-menu__navigation
+    .custom-desktop-menu
+    > li.has-dropdown
+    > .custom-submenu {
     display: none !important;
   }
 }
-
 
 .featured-works-section {
   .book-item {
@@ -1655,7 +1805,6 @@ canvas {
   }
 }
 
-
 @media (min-width: 1025px) and (max-width: 1366px) {
   .rb-slider-container {
     height: 356px;
@@ -1686,11 +1835,11 @@ canvas {
 
     .card-bottom p {
       line-height: 1.4;
-      font-size: .85rem;
+      font-size: 0.85rem;
     }
   }
 
-  .vlt-default-menu__navigation .sf-menu>li+li {
+  .vlt-default-menu__navigation .sf-menu > li + li {
     margin-left: 1.8rem;
   }
 
@@ -1699,7 +1848,6 @@ canvas {
   }
 
   .blog-section {
-
     .vlt-post--masonry,
     .vlt-post-media {
       height: 400px;
@@ -1713,5 +1861,4 @@ canvas {
       margin-top: 0;
     }
   }
-
 }
