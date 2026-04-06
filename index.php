@@ -719,7 +719,7 @@
 								style="animation-delay:0s; animation-duration:700ms;">
 								<h3>Featured Works</h3>
 							</div>
-							<div class="vlt-gap-100"></div>
+							
 							<div class="vlt-content-slider" data-navigation-anchor=".vlt-featured-anchor" data-effect="" data-gap="120" data-loop="" data-speed="" data-autoplay="" data-autoplay-speed="" data-slides-centered="" data-slide-settings="{}" data-free-mode="" data-slider-offset="" data-mousewheel="">
 								<div class="swiper-container">
 									<div class="swiper-wrapper">
@@ -776,7 +776,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="vlt-gap-40"></div>
+							
 							<div class="vlt-slider-controls vlt-slider-controls--style-2 vlt-featured-anchor">
 								<div class="vlt-swiper-pagination text-center"></div>
 								<div class="vlt-swiper-button-prev">
