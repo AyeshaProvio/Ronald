@@ -234,6 +234,20 @@ function readMore() {
 
 }
 
+if ($(window).width() < 768) {
+  // Optional: Add a class to body for mobile-specific styling
+  $("body").addClass("mobile-no-slider");
+}
+
+function scrollToAnchor(anchorName) {
+  // Finds the section where data-anchor matches the name
+  const target = document.querySelector(`[data-anchor="${anchorName}"]`);
+
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 document.querySelector(".read-more-text").addEventListener("click", readMore)
 
 // Initialize Book Shop Swiper Carousel
@@ -448,7 +462,8 @@ document.addEventListener("DOMContentLoaded", function () {
       breakpoints: {
         600: { slidesPerView: 1 },
         900: { slidesPerView: 2 },
-        1200: { slidesPerView: 2 }
+        1200: { slidesPerView: 3 },
+        1600: { slidesPerView: 2 }
       },
       /* Stop any playing video when user slides away */
       on: {
