@@ -23,8 +23,6 @@
 
 
 
-
-
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 52px !important;
@@ -52,6 +50,13 @@
     align-items: end !important;
   }
 }
+
+
+
+
+
+
+
 
 
 @media (min-width: 1025px) and (max-width: 1366px) {
