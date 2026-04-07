@@ -1459,7 +1459,7 @@ canvas {
 }
 
 /* ---------- DESKTOP DROPDOWN ---------- */
-.vlt-default-menu__navigation .custom-desktop-menu,
+/* .vlt-default-menu__navigation .custom-desktop-menu,
 .vlt-offcanvas-menu__navigation .custom-mobile-menu,
 .vlt-default-menu__navigation .custom-submenu,
 .vlt-offcanvas-menu__navigation .custom-submenu {
@@ -1535,7 +1535,7 @@ canvas {
   background: rgba(255, 255, 255, 0.06);
 }
 
-/* ---------- MOBILE / OFFCANVAS ---------- */
+/* ---------- MOBILE / OFFCANVAS ---------- 
 .vlt-offcanvas-menu__navigation .custom-mobile-menu>li {
   position: relative;
 }
@@ -1604,8 +1604,8 @@ canvas {
 @media (max-width: 991.98px) {
   .vlt-default-menu__navigation .custom-desktop-menu>li.has-dropdown>.custom-submenu {
     display: none !important;
-  }
-}
+  } 
+}*/
 
 
 .featured-works-section {
