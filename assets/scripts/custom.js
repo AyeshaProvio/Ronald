@@ -234,6 +234,21 @@ function readMore() {
 
 }
 
+if ($(window).width() < 768) {
+  // Optional: Add a class to body for mobile-specific styling
+  $("body").addClass("mobile-no-slider");
+}
+
+function scrollToAnchor(anchorName) {
+  // Finds the section where data-anchor matches the name
+  const target = document.querySelector(`[data-anchor="${anchorName}"]`);
+
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+
 document.querySelector(".read-more-text").addEventListener("click", readMore)
 
 // Initialize Book Shop Swiper Carousel
@@ -324,12 +339,6 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: 'Author Journey',
       desc: 'Explore Ronald’s path from lived experiences to becoming a storyteller shaped by global perspectives and purpose.',
-      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
-      videoId: 'dQw4w9WgXcQ'
-    },
-    {
-      title: 'Global Experiences',
-      desc: 'Stories inspired by Ronald’s time in South Africa and his charitable work supporting the British Military community.',
       icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
       videoId: 'dQw4w9WgXcQ'
     },

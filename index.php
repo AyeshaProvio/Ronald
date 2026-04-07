@@ -754,9 +754,9 @@
 													<img src="/assets/img/book2x.png" alt="But Daddy, What is a Jew?" class="img-fluid">
 												</div>
 												<div class="book-content">
-													<h4>Bitter and Bordeaux</h4>
+													<h4>Sydney And Marvin</h4>
 													<p>A light romance novel based on life at a North England Brewery. Follow the characters as they navigate the frothy challenges of brewery life, discovering love in unexpected places.</p>
-													<a href="#" class="btn btn-amazon">
+													<a href="#" class="btn btn-amazon"></a>
 														<ul class="book-features-ul">
 															<li>Light-hearted romance set in a brewery</li>
 															<li>Explores themes of love and unexpected connections</li>
