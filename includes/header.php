@@ -15,11 +15,11 @@
 							<li data-menuanchor="About"><a href="#About">About</a></li>
 							<li class="has-dropdown" data-menuanchor="FeaturedWorks">
 								<a href="#Book">Featured Works</a>
-								<!-- <ul class="custom-submenu">
+								<ul class="custom-submenu">
 									<li><a href="#MainBook">Main Book</a></li>
 									<li><a href="#ChildrensBooks">Children's Books</a></li>
 									<li><a href="#NovelsShortStories">Novels &amp; Short Stories</a></li>
-								</ul> -->
+								</ul>
 							</li>
 							<li data-menuanchor="ScreenPlays"><a href="#ScreenPlays">ScreenPlays</a></li>
 							<li data-menuanchor="Testimonials"><a href="#Testimonials">Testimonials</a></li>

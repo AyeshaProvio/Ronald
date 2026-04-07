@@ -234,20 +234,6 @@ function readMore() {
 
 }
 
-if ($(window).width() < 768) {
-  // Optional: Add a class to body for mobile-specific styling
-  $("body").addClass("mobile-no-slider");
-}
-
-function scrollToAnchor(anchorName) {
-  // Finds the section where data-anchor matches the name
-  const target = document.querySelector(`[data-anchor="${anchorName}"]`);
-
-  if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
-  }
-}
-
 document.querySelector(".read-more-text").addEventListener("click", readMore)
 
 // Initialize Book Shop Swiper Carousel
@@ -338,37 +324,37 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: 'Author Journey',
       desc: 'Explore Ronald’s path from lived experiences to becoming a storyteller shaped by global perspectives and purpose.',
-      icon: `<svg viewBox='0 0 24 24'><polyline points='22 12 18 12 15 21 9 3 6 12 2 12'/></svg>`,
+      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
       videoId: 'dQw4w9WgXcQ'
     },
     {
       title: 'Global Experiences',
       desc: 'Stories inspired by Ronald’s time in South Africa and his charitable work supporting the British Military community.',
-      icon: `<svg viewBox='0 0 24 24'><path d='M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z'/></svg>`,
+      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
       videoId: 'dQw4w9WgXcQ'
     },
     {
       title: 'Creative Collaboration',
       desc: 'Guided by mentorship from Gareth Randall and David Norris, shaping a refined and impactful writing voice.',
-      icon: `<svg viewBox='0 0 24 24'><path d='M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx='9' cy='7' r='4"/><path d='M23 21v-2a4 4 0 0 0-3-3.87"/><path d='M16 3.13a4 4 0 0 1 0 7.75'/></svg>`,
+      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
       videoId: 'dQw4w9WgXcQ'
     },
     {
       title: 'Storytelling Philosophy',
       desc: 'A unique blend of humor, realism, and reflection—bringing everyday human experiences to life through compelling narratives.',
-      icon: `<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9l6 6M15 9l-6 6"/></svg>`,
+      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
       videoId: 'dQw4w9WgXcQ'
     },
     {
       title: 'Genres & Works',
       desc: 'From children’s books to novels, short stories, and screenplays—each work explores adventure, identity, and human depth.',
-      icon: `<svg viewBox='0 0 24 24'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>`,
+      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
       videoId: 'dQw4w9WgXcQ'
     },
     {
       title: 'Future Projects',
       desc: 'Discover upcoming works like \'Bitter and Bordeaux\' and \'But Daddy, What is a Jew?\'—stories that redefine perspective and emotion.',
-      icon: `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>`,
+      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
       videoId: 'dQw4w9WgXcQ'
     }
   ];
@@ -462,8 +448,7 @@ document.addEventListener("DOMContentLoaded", function () {
       breakpoints: {
         600: { slidesPerView: 1 },
         900: { slidesPerView: 2 },
-        1200: { slidesPerView: 3 },
-        1600: { slidesPerView: 2 }
+        1200: { slidesPerView: 2 }
       },
       /* Stop any playing video when user slides away */
       on: {
