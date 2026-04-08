@@ -1161,7 +1161,7 @@ textarea:focus::-webkit-input-placeholder {
   text-transform: uppercase;
 }
 .vlt-default-menu__navigation .sf-menu > li + li {
-  margin-left: 3.125rem;
+  margin-left: 2.125rem;
 }
 .vlt-default-menu__navigation .sf-menu > li.active > a,
 .vlt-default-menu__navigation .sf-menu > li:hover > a {

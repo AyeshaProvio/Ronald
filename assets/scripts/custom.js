@@ -236,6 +236,20 @@ function readMore() {
 
 document.querySelector(".read-more-text").addEventListener("click", readMore)
 
+if ($(window).width() < 768) {
+  // Optional: Add a class to body for mobile-specific styling
+  $("body").addClass("mobile-no-slider");
+}
+
+function scrollToAnchor(anchorName) {
+  // Finds the section where data-anchor matches the name
+  const target = document.querySelector(`[data-anchor="${anchorName}"]`);
+
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 // Initialize Book Shop Swiper Carousel
 document.addEventListener('DOMContentLoaded', function () {
   const bookSwiper = new Swiper('.book-swiper', {
@@ -314,165 +328,165 @@ document.addEventListener("DOMContentLoaded", function () {
  * Toggle OFF → iframe removed, content fades back in
  */
 
-(function () {
+// (function () {
 
-  /* ── Feature data ────────────────────────────────────────────
-     Replace each videoId with your real YouTube video ID.
-     The ID is the part after ?v= in a YouTube URL.
-  ─────────────────────────────────────────────────────────────── */
-  const features = [
-    {
-      title: 'Author Journey',
-      desc: 'Explore Ronald’s path from lived experiences to becoming a storyteller shaped by global perspectives and purpose.',
-      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
-      videoId: 'dQw4w9WgXcQ'
-    },
-    {
-      title: 'Global Experiences',
-      desc: 'Stories inspired by Ronald’s time in South Africa and his charitable work supporting the British Military community.',
-      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
-      videoId: 'dQw4w9WgXcQ'
-    },
-    {
-      title: 'Creative Collaboration',
-      desc: 'Guided by mentorship from Gareth Randall and David Norris, shaping a refined and impactful writing voice.',
-      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
-      videoId: 'dQw4w9WgXcQ'
-    },
-    {
-      title: 'Storytelling Philosophy',
-      desc: 'A unique blend of humor, realism, and reflection—bringing everyday human experiences to life through compelling narratives.',
-      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
-      videoId: 'dQw4w9WgXcQ'
-    },
-    {
-      title: 'Genres & Works',
-      desc: 'From children’s books to novels, short stories, and screenplays—each work explores adventure, identity, and human depth.',
-      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
-      videoId: 'dQw4w9WgXcQ'
-    },
-    {
-      title: 'Future Projects',
-      desc: 'Discover upcoming works like \'Bitter and Bordeaux\' and \'But Daddy, What is a Jew?\'—stories that redefine perspective and emotion.',
-      icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
-      videoId: 'dQw4w9WgXcQ'
-    }
-  ];
+//   /* ── Feature data ────────────────────────────────────────────
+//      Replace each videoId with your real YouTube video ID.
+//      The ID is the part after ?v= in a YouTube URL.
+//   ─────────────────────────────────────────────────────────────── */
+//   const features = [
+//     {
+//       title: 'Author Journey',
+//       desc: 'Explore Ronald’s path from lived experiences to becoming a storyteller shaped by global perspectives and purpose.',
+//       icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
+//       videoId: 'dQw4w9WgXcQ'
+//     },
+//     {
+//       title: 'Global Experiences',
+//       desc: 'Stories inspired by Ronald’s time in South Africa and his charitable work supporting the British Military community.',
+//       icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
+//       videoId: 'dQw4w9WgXcQ'
+//     },
+//     {
+//       title: 'Creative Collaboration',
+//       desc: 'Guided by mentorship from Gareth Randall and David Norris, shaping a refined and impactful writing voice.',
+//       icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
+//       videoId: 'dQw4w9WgXcQ'
+//     },
+//     {
+//       title: 'Storytelling Philosophy',
+//       desc: 'A unique blend of humor, realism, and reflection—bringing everyday human experiences to life through compelling narratives.',
+//       icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
+//       videoId: 'dQw4w9WgXcQ'
+//     },
+//     {
+//       title: 'Genres & Works',
+//       desc: 'From children’s books to novels, short stories, and screenplays—each work explores adventure, identity, and human depth.',
+//       icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
+//       videoId: 'dQw4w9WgXcQ'
+//     },
+//     {
+//       title: 'Future Projects',
+//       desc: 'Discover upcoming works like \'Bitter and Bordeaux\' and \'But Daddy, What is a Jew?\'—stories that redefine perspective and emotion.',
+//       icon: `<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>`,
+//       videoId: 'dQw4w9WgXcQ'
+//     }
+//   ];
 
-  /* ── Build cards ─────────────────────────────────────────── */
-  function buildCards() {
-    const wrapper = document.getElementById('featureCardWrapper');
-    if (!wrapper) return;
+//   /* ── Build cards ─────────────────────────────────────────── */
+//   function buildCards() {
+//     const wrapper = document.getElementById('featureCardWrapper');
+//     if (!wrapper) return;
 
-    features.forEach(function (f) {
-      const slide = document.createElement('div');
-      slide.className = 'swiper-slide';
+//     features.forEach(function (f) {
+//       const slide = document.createElement('div');
+//       slide.className = 'swiper-slide';
 
-      slide.innerHTML = `
-                <div class="feat-card" data-video-id="${f.videoId}">
+//       slide.innerHTML = `
+//                 <div class="feat-card" data-video-id="${f.videoId}">
 
-                    <div class="card-slit"></div>
+//                     <div class="card-slit"></div>
 
-                    <div class="card-lumen">
-                        <div class="lumen-mid"></div>
-                        <div class="lumen-hi"></div>
-                    </div>
+//                     <div class="card-lumen">
+//                         <div class="lumen-mid"></div>
+//                         <div class="lumen-hi"></div>
+//                     </div>
 
-                    <div class="card-icon">${f.icon}</div>
+//                     <div class="card-icon">${f.icon}</div>
 
-                    <div class="card-bottom">
-                        <h4>${f.title}</h4>
-                        <p>${f.desc}</p>
-                    </div>
+//                     <div class="card-bottom">
+//                         <h4>${f.title}</h4>
+//                         <p>${f.desc}</p>
+//                     </div>
 
-                    <!-- Full-card video overlay (empty until toggle ON) -->
-                    <div class="card-video-overlay"></div>
+//                     <!-- Full-card video overlay (empty until toggle ON) -->
+//                     <div class="card-video-overlay"></div>
 
-                    <button class="card-toggle" aria-label="Toggle spotlight">
-                        <div class="handle"></div>
-                    </button>
+//                     <button class="card-toggle" aria-label="Toggle spotlight">
+//                         <div class="handle"></div>
+//                     </button>
 
-                </div>`;
+//                 </div>`;
 
-      wrapper.appendChild(slide);
-    });
-  }
+//       wrapper.appendChild(slide);
+//     });
+//   }
 
-  /* ── Toggle handlers ─────────────────────────────────────── */
-  function bindToggles() {
-    document.querySelectorAll('.card-toggle').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        const card = btn.closest('.feat-card');
-        const isOn = card.classList.toggle('is-on');
-        const overlay = card.querySelector('.card-video-overlay');
-        const videoId = card.dataset.videoId;
+//   /* ── Toggle handlers ─────────────────────────────────────── */
+//   function bindToggles() {
+//     document.querySelectorAll('.card-toggle').forEach(function (btn) {
+//       btn.addEventListener('click', function () {
+//         const card = btn.closest('.feat-card');
+//         const isOn = card.classList.toggle('is-on');
+//         const overlay = card.querySelector('.card-video-overlay');
+//         const videoId = card.dataset.videoId;
 
-        if (isOn) {
-          /* Inject full-size iframe — autoplay + mute required by browsers */
-          const iframe = document.createElement('iframe');
-          iframe.src =
-            'https://www.youtube.com/embed/' + videoId +
-            '?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1&controls=1';
-          iframe.allow = 'autoplay; encrypted-media; fullscreen';
-          iframe.allowFullscreen = true;
-          overlay.appendChild(iframe);
-        } else {
-          /* Remove iframe to fully stop playback */
-          const iframe = overlay.querySelector('iframe');
-          if (iframe) iframe.remove();
-        }
-      });
-    });
-  }
+//         if (isOn) {
+//           /* Inject full-size iframe — autoplay + mute required by browsers */
+//           const iframe = document.createElement('iframe');
+//           iframe.src =
+//             'https://www.youtube.com/embed/' + videoId +
+//             '?autoplay=1&mute=1&rel=0&modestbranding=1&playsinline=1&controls=1';
+//           iframe.allow = 'autoplay; encrypted-media; fullscreen';
+//           iframe.allowFullscreen = true;
+//           overlay.appendChild(iframe);
+//         } else {
+//           /* Remove iframe to fully stop playback */
+//           const iframe = overlay.querySelector('iframe');
+//           if (iframe) iframe.remove();
+//         }
+//       });
+//     });
+//   }
 
-  /* ── Stop video on a card and turn it off ────────────────── */
-  function turnOff(card) {
-    card.classList.remove('is-on');
-    const iframe = card.querySelector('iframe');
-    if (iframe) iframe.remove();
-  }
+//   /* ── Stop video on a card and turn it off ────────────────── */
+//   function turnOff(card) {
+//     card.classList.remove('is-on');
+//     const iframe = card.querySelector('iframe');
+//     if (iframe) iframe.remove();
+//   }
 
-  /* ── Init Swiper ─────────────────────────────────────────── */
-  function initSwiper() {
-    new Swiper('.feat-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 24,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
-      breakpoints: {
-        600: { slidesPerView: 1 },
-        900: { slidesPerView: 2 },
-        1200: { slidesPerView: 2 }
-      },
-      /* Stop any playing video when user slides away */
-      on: {
-        slideChange: function () {
-          document.querySelectorAll('.feat-card.is-on').forEach(turnOff);
-        }
-      }
-    });
-  }
+//   /* ── Init Swiper ─────────────────────────────────────────── */
+//   function initSwiper() {
+//     new Swiper('.feat-swiper', {
+//       slidesPerView: 1,
+//       spaceBetween: 24,
+//       pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true
+//       },
+//       navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev'
+//       },
+//       breakpoints: {
+//         600: { slidesPerView: 1 },
+//         900: { slidesPerView: 2 },
+//         1200: { slidesPerView: 2 }
+//       },
+//       /* Stop any playing video when user slides away */
+//       on: {
+//         slideChange: function () {
+//           document.querySelectorAll('.feat-card.is-on').forEach(turnOff);
+//         }
+//       }
+//     });
+//   }
 
-  /* ── Boot ────────────────────────────────────────────────── */
-  function init() {
-    buildCards();
-    bindToggles();
-    initSwiper();
-  }
+//   /* ── Boot ────────────────────────────────────────────────── */
+//   function init() {
+//     buildCards();
+//     bindToggles();
+//     initSwiper();
+//   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+//   if (document.readyState === 'loading') {
+//     document.addEventListener('DOMContentLoaded', init);
+//   } else {
+//     init();
+//   }
 
-})();
+// })();
 
 document.addEventListener('DOMContentLoaded', function () {
   var toggles = document.querySelectorAll('.mobile-submenu-toggle');
@@ -506,3 +520,70 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+
+/**
+ * screenplay.js  —  Coming Soon Screenplay Slider
+ * Depends on: Swiper 11
+ */
+
+(function () {
+
+  /* ── Init Swiper ─────────────────────────────────────────── */
+  function initSwiper() {
+    new Swiper('.sp-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      centeredSlides: true,
+      loop: false,
+      speed: 700,
+      grabCursor: true,
+      simulateTouch: true,
+      touchStartPreventDefault: false,
+      resistanceRatio: 0,
+      pagination: {
+        el: '.sp-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      keyboard: { enabled: false }
+    });
+  }
+
+  /* ── Cinematic bar entrance animation ────────────────────── */
+  function animateBars() {
+    const top = document.querySelector('.sp-bar--top');
+    const bottom = document.querySelector('.sp-bar--bottom');
+    if (!top || !bottom) return;
+
+    /* Start bars covering more, then retract to letterbox height */
+    top.style.transition = 'height 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s';
+    bottom.style.transition = 'height 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s';
+    top.style.height = '120px';
+    bottom.style.height = '120px';
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        top.style.height = '60px';
+        bottom.style.height = '60px';
+      });
+    });
+  }
+
+  /* ── Boot ────────────────────────────────────────────────── */
+  function init() {
+    initSwiper();
+    animateBars();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();

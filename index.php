@@ -113,7 +113,6 @@
 				</div>
 			</div>
 
-
 			<!--Books-->
 			<div class="vlt-section pp-scrollable book-section section book-section-1" data-theme="default" data-anchor="Book">
 				<div class="vlt-section__vertical-align">
@@ -185,13 +184,12 @@
 				</div>
 			</div>
 
-			<!--Featured Works-->
+			<!--Screenplays-->
 			<!--Section-->
-			<div class="vlt-section pp-scrollable features-section section" data-theme="dark" data-anchor="ScreenPlays">
+			<!-- <div class="vlt-section pp-scrollable features-section section" data-theme="dark" data-anchor="ComingSoon">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<div class="container">
-							<!-- Section Header -->
 							<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
 								style="animation-delay:0s; animation-duration:700ms;">
 								<h3>Screenplays</h3>
@@ -201,7 +199,6 @@
 
 							<div class="vlt-gap-50"></div>
 
-							<!-- Swiper Slider -->
 							<div class="swiper feat-swiper">
 								<div class="swiper-wrapper" id="featureCardWrapper"></div>
 								<div class="swiper-button-prev"></div>
@@ -212,136 +209,304 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
-			<!--Endoursements-->
+			<!--Screenplays-->
 			<!--Section-->
-			<!-- <div class="vlt-section pp-scrollable end-section" data-anchor="Endorsement">
+			<div class="vlt-section pp-scrollable screenplay-section section" data-theme="dark" data-anchor="ScreenPlays">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
-						<div class="vlt-section__ken-burn-background">
-							<img src="https://images.unsplash.com/photo-1446824505046-e43605ffb17f" class="img-fluid" alt="endo-bg">
-						</div>
-						<div class="bird-container bird-container--two">
-							<div class="bird bird--two"></div>
+						<!--Ken Burn Effect-->
+						<div class="vlt-section__ken-burn-background"><img src="assets/img/screen-1.jpg" alt="">
 						</div>
 
-						<div class="bird-container bird-container--three">
-							<div class="bird bird--three"></div>
-						</div>
-
-						<div class="bird-container bird-container--four">
-							<div class="bird bird--four"></div>
-						</div>
 						<div class="container">
 							<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
 								style="animation-delay:0s; animation-duration:700ms;">
-								<div class="bird-container bird-container--one">
-									<div class="bird bird--one"></div>
-								</div>
-
-
-								<div class="d-block d-md-flex align-items-center justify-content-center">
-									<h3 class="">Storytelling Approach</h3>
-								</div>
+								<span class="sp-label__line"></span>
+								<h3>Screenplays</h3>
+								<p>Explore what makes our platform exceptional. Toggle any card to illuminate its capabilities.</p>
 							</div>
-							<div class="vlt-gap-50"></div>
+							<!-- Section label -->
+							<!-- <div class="sp-label vlt-animated-block" data-animation-name="fadeInUpSm"
+								style="animation-delay:0s; animation-duration:700ms;">
+								<span class="sp-label__line"></span>
+								<span class="sp-label__text">Now in Development</span>
+								<span class="sp-label__line"></span>
+							</div> -->
 
-							<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
-								style="animation-delay:.1s; animation-duration:700ms;">
+							<div class="vlt-gap-10"></div>
 
-								<div class="vlt-content-slider " data-navigation-anchor=".vlt-education-anchor"
-									data-effect="" data-gap="120" data-loop="" data-speed="" data-autoplay=""
-									data-autoplay-speed="" data-slides-centered="" data-slide-settings="{}"
-									data-free-mode="" data-slider-offset="" data-mousewheel="">
-									<div class="swiper-container">
-										<div class="swiper-wrapper">
+							<!-- Swiper -->
+							<div class="swiper sp-swiper">
+								<div class="swiper-wrapper">
 
-											<div class="swiper-slide">
-												<h4 class="text-center mb-3">Children's Books</h4>
-												<div class="video-box">
-													<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
-														style="animation-delay:0s; animation-duration:700ms;">
-														<div class="vlt-video-button"><a
-																href="https://pixabay.com/videos/download/video-42890_medium.mp4"
-																data-fancybox data-small-btn="true" rel="nofollow"><svg
-																	xmlns="http://www.w3.org/2000/svg" fill="none"
-																	viewBox="0 0 24 27">
-																	<defs />
-																	<path fill="currentColor"
-																		d="M23.7471 13.2802L.876191 26.4847.876192.0757026 23.7471 13.2802z" />
-																</svg></a></div>
+									<!-- ── Slide 1 ── -->
+									<div class="swiper-slide">
+										<div class="sp-slide">
+
+											<!-- Poster / thumbnail area -->
+											<div class="sp-slide__poster">
+												<div class="sp-slide__poster-inner">
+													<!-- Replace src with your actual poster image -->
+													<img src="/assets/img/screenplay-s.jpg" alt="Screenplay poster">
+													<div class="sp-slide__poster-vignette"></div>
+													<!-- Play reel icon -->
+													<div class="sp-slide__reel">
+														<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round">
+															<circle cx="12" cy="12" r="10" />
+															<polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" />
+														</svg>
 													</div>
 												</div>
-												<p class="text-center mt-3">Engaging stories for young readers, filled with adventure and life lessons.</p>
 											</div>
 
-											<div class="swiper-slide">
-												<h4 class="text-center mb-3">Novels & Short Stories</h4>
-												<div class="video-box">
-													<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
-														style="animation-delay:0s; animation-duration:700ms;">
-														<div class="vlt-video-button"><a
-																href="#"
-																data-fancybox data-small-btn="true" rel="nofollow"><svg
-																	xmlns="http://www.w3.org/2000/svg" fill="none"
-																	viewBox="0 0 24 27">
-																	<defs />
-																	<path fill="currentColor"
-																		d="M23.7471 13.2802L.876191 26.4847.876192.0757026 23.7471 13.2802z" />
-																</svg></a></div>
+											<!-- Meta content -->
+											<div class="sp-slide__meta">
+
+												<div class="sp-slide__badges">
+													<span class="sp-badge sp-badge--genre">Drama</span>
+													<span class="sp-badge sp-badge--genre">Thriller</span>
+													<span class="sp-badge sp-badge--year">2025</span>
+												</div>
+
+												<h2 class="sp-slide__title">
+													<span class="sp-slide__title-sub">A New Screenplay</span>
+													THE EMISSARY
+												</h2>
+
+												<p class="sp-slide__logline">
+													A reclusive author discovers that the characters from his unfinished novel
+													are bleeding into reality — and only he can write the ending before they do.
+												</p>
+
+												<div class="sp-slide__divider"></div>
+
+												<div class="sp-slide__details">
+													<div class="sp-detail">
+														<span class="sp-detail__label">Written by</span>
+														<span class="sp-detail__value">JAMES KIRK</span>
+													</div>
+													<div class="sp-detail">
+														<span class="sp-detail__label">Format</span>
+														<span class="sp-detail__value">Feature Film</span>
+													</div>
+													<div class="sp-detail">
+														<span class="sp-detail__label">Pages</span>
+														<span class="sp-detail__value">117</span>
 													</div>
 												</div>
-												<p class="text-center mt-3">Blending humor, reflection, and realism to explore human experiences and adventures.</p>
-											</div>
 
-											<div class="swiper-slide">
-												<h4 class="text-center mb-3">Screenplays</h4>
-												<div class="video-box">
-													<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
-														style="animation-delay:0s; animation-duration:700ms;">
-														<div class="vlt-video-button"><a
-																href="https://pixabay.com/videos/download/video-42890_medium.mp4"
-																data-fancybox data-small-btn="true" rel="nofollow"><svg
-																	xmlns="http://www.w3.org/2000/svg" fill="none"
-																	viewBox="0 0 24 27">
-																	<defs />
-																	<path fill="currentColor"
-																		d="M23.7471 13.2802L.876191 26.4847.876192.0757026 23.7471 13.2802z" />
-																</svg></a></div>
-													</div>
+												<div class="sp-slide__coming-soon">
+													<div class="sp-cs-dot"></div>
+													<span>Coming Soon</span>
 												</div>
-												<p class="text-center mt-3">Dramatic scripts with potential for Hollywood projects, capturing intense narratives.</p>
+
 											</div>
 
+											<!-- Screenplay lines decoration -->
+											<div class="sp-lines" aria-hidden="true">
+												<div class="sp-line"></div>
+												<div class="sp-line"></div>
+												<div class="sp-line"></div>
+												<div class="sp-line"></div>
+												<div class="sp-line"></div>
+											</div>
 
 										</div>
 									</div>
-								</div>
-								<div class="vlt-gap-40"></div>
+									<!-- ── /Slide 1 ── -->
 
-								<div class="vlt-slider-controls vlt-slider-controls--style-2 vlt-education-anchor">
-									<div class="vlt-swiper-pagination text-center"></div>
-									<div class="vlt-swiper-button-prev"><svg xmlns="http://www.w3.org/2000/svg"
-											fill="none" viewBox="0 0 24 45">
-											<defs />
-											<path fill="currentColor" fill-rule="evenodd"
-												d="M1.36413 22.5795L24 43.9524l-.7271.6865L.272896 22.9223l.383716-.3623-.362754-.3367L23.0941.319721l.733.680233L1.36413 22.5795z"
-												clip-rule="evenodd" />
-										</svg></div>
-									<div class="vlt-swiper-button-next"><svg fill="none"
-											xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 45">
-											<defs />
-											<path fill-rule="evenodd" clip-rule="evenodd"
-												d="M22.6359 22.3728L0 1.00001.727101.313477 23.7271 22.0301l-.3837.3623.3627.3367L.905866 44.6327l-.732997-.6803L22.6359 22.3728z"
-												fill="currentColor" />
-										</svg></div>
+									<!-- Add more slides here following the same structure -->
+									<div class="swiper-slide">
+										<div class="sp-slide">
+
+											<!-- Poster / thumbnail area -->
+											<div class="sp-slide__poster">
+												<div class="sp-slide__poster-inner">
+													<!-- Replace src with your actual poster image -->
+													<img src="/assets/img/screenplay-2.jpg" alt="Screenplay poster">
+													<div class="sp-slide__poster-vignette"></div>
+													<!-- Play reel icon -->
+													<div class="sp-slide__reel">
+														<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"
+															stroke-linecap="round" stroke-linejoin="round">
+															<circle cx="12" cy="12" r="10" />
+															<polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" />
+														</svg>
+													</div>
+												</div>
+											</div>
+
+											<!-- Meta content -->
+											<div class="sp-slide__meta">
+
+												<div class="sp-slide__badges">
+													<span class="sp-badge sp-badge--genre">Drama</span>
+													<span class="sp-badge sp-badge--genre">Thriller</span>
+													<span class="sp-badge sp-badge--year">2025</span>
+												</div>
+
+												<h2 class="sp-slide__title">
+													<span class="sp-slide__title-sub">Based on the Book – The Emissary</span>
+													Nottingham Lace
+												</h2>
+
+												<p class="sp-slide__logline">
+													<strong>James</strong>
+													A Jesuit Priest once said to me, there are five experiences we all will encounter in our lifetime: love, beauty, responsibility, loneliness, suffering and death.
+
+												</p>
+
+												<div class="sp-slide__divider"></div>
+
+												<div class="sp-slide__details">
+													<div class="sp-detail">
+														<span class="sp-detail__label">Written by</span>
+														<span class="sp-detail__value">JAMES KIRK</span>
+													</div>
+													<div class="sp-detail">
+														<span class="sp-detail__label">Format</span>
+														<span class="sp-detail__value">Feature Film</span>
+													</div>
+													<div class="sp-detail">
+														<span class="sp-detail__label">Pages</span>
+														<span class="sp-detail__value">112</span>
+													</div>
+												</div>
+
+												<div class="sp-slide__coming-soon">
+													<div class="sp-cs-dot"></div>
+													<span>Coming Soon</span>
+												</div>
+
+											</div>
+
+											<!-- Screenplay lines decoration -->
+											<div class="sp-lines" aria-hidden="true">
+												<div class="sp-line"></div>
+												<div class="sp-line"></div>
+												<div class="sp-line"></div>
+												<div class="sp-line"></div>
+												<div class="sp-line"></div>
+											</div>
+
+										</div>
+									</div>
+
+								</div><!-- /swiper-wrapper -->
+
+								<!-- Navigation -->
+								<div class="swiper-button-prev sp-nav-btn"></div>
+								<div class="swiper-button-next sp-nav-btn"></div>
+
+								<!-- Pagination -->
+								<!-- <div class="swiper-pagination sp-pagination"></div> -->
+
+							</div><!-- /swiper -->
+
+						</div><!-- /container -->
+					</div><!-- /vlt-section__content -->
+				</div><!-- /vlt-section__vertical-align -->
+			</div>
+
+			<!--Purchase Section-->
+			<!--Section-->
+			<div class="vlt-section pp-scrollable purchase-section section" data-theme="default" data-anchor="Purchase">
+				<div class="vlt-section__vertical-align">
+					<div class="vlt-section__content">
+						<div class="container">
+							<div class="vlt-animated-block" data-animation-name="fadeInUpSm" style="animation-delay:0s; animation-duration:700ms;">
+								<h3>Purchase Ronald's Books</h3>
+							</div>
+
+							<div class="vlt-gap-50"></div>
+
+							<div class="rb-slider-shell">
+								<div class="rb-slider-container">
+									<div class="rb-slide">
+
+										<!-- Book 1 -->
+										<div class="rb-item" style="background-image: url('/assets/img/book1-banner.jpg');">
+											<div class="rb-item-overlay"></div>
+											<div class="rb-item-content">
+												<!-- <div class="rb-book-cover-wrap">
+													<img src="/assets/img/book1-banner.jpg" alt="But Daddy Book Cover" class="rb-book-cover">
+												</div> -->
+
+												<div class="rb-text-content">
+													<h3 class="rb-name">But Daddy, What is a Jew?</h3>
+													<p class="rb-des">
+														A modern history book based on the dramatized journal of a Jewish teenager during the Occupation of France (1940-1944).
+													</p>
+													<div class="rb-actions">
+														<a href="#" class="rb-btn">Paperback</a>
+														<a href="#" class="rb-btn">Hardcover</a>
+														<a href="#" class="rb-btn">eBook</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Book 2 -->
+										<div class="rb-item" style="background-image: url('/assets/img/slide.jpg');">
+											<div class="rb-item-overlay"></div>
+											<div class="rb-item-content">
+												<!-- <div class="rb-book-cover-wrap">
+													<img src="/assets/img/slide.jpg" alt="Bitter and Bordeaux Book Cover" class="rb-book-cover">
+												</div> -->
+
+												<div class="rb-text-content">
+													<h3 class="rb-name">BITTER AND BORDEAUX</h3>
+													<p class="rb-des">
+														A light romance novel based on life at a North England Brewery, where love appears in unexpected places.
+													</p>
+													<div class="rb-actions">
+														<a href="#" class="rb-btn">Paperback</a>
+														<a href="#" class="rb-btn">Hardcover</a>
+														<a href="#" class="rb-btn">eBook</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Book 3 -->
+										<div class="rb-item" style="background-image: url('/assets/img/slide-2.jpg');">
+											<div class="rb-item-overlay"></div>
+											<div class="rb-item-content">
+												<!-- <div class="rb-book-cover-wrap">
+													<img src="/assets/img/slide-2.jpg" alt="A Life Too Extraordinary to Be Fiction Book Cover" class="rb-book-cover">
+												</div> -->
+
+												<div class="rb-text-content">
+													<h3 class="rb-name">SYDNEY AND MARVIN</h3>
+													<p class="rb-des">
+														Two Seagulls meet by accident on the North Coast of France near a Ferry Port, one is a young English bird (Sydney) and the Other is a wise, experienced old French bird (Marvin).
+													</p>
+													<div class="rb-actions">
+														<a href="#" class="rb-btn">Paperback</a>
+														<a href="#" class="rb-btn">Hardcover</a>
+														<a href="#" class="rb-btn">eBook</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="rb-button">
+										<button class="rb-prev" type="button" aria-label="Previous">◁</button>
+										<button class="rb-next" type="button" aria-label="Next">▷</button>
+									</div>
 								</div>
 							</div>
+
+							<div class="vlt-gap-50"></div>
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 			<!--Testimonials-->
 			<!--Section-->
@@ -465,98 +630,90 @@
 				</div>
 			</div>
 
-			<!--Purchase Section-->
-			<!--Section-->
-			<div class="vlt-section pp-scrollable purchase-section section" data-theme="default" data-anchor="Purchase">
+
+			<!--featured works-->
+			<div class="vlt-section pp-scrollable featured-works-section section" data-theme="default" data-anchor="FeaturedWorks">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<div class="container">
-							<div class="vlt-animated-block" data-animation-name="fadeInUpSm" style="animation-delay:0s; animation-duration:700ms;">
-								<h3>Purchase Ronald's Books</h3>
+							<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
+								style="animation-delay:0s; animation-duration:700ms;">
+								<h3>Featured Works</h3>
 							</div>
-
-							<div class="vlt-gap-50"></div>
-
-							<div class="rb-slider-shell">
-								<div class="rb-slider-container">
-									<div class="rb-slide">
-
-										<!-- Book 1 -->
-										<div class="rb-item" style="background-image: url('/assets/img/book1-banner.jpg');">
-											<div class="rb-item-overlay"></div>
-											<div class="rb-item-content">
-												<!-- <div class="rb-book-cover-wrap">
-													<img src="/assets/img/book1-banner.jpg" alt="But Daddy Book Cover" class="rb-book-cover">
-												</div> -->
-
-												<div class="rb-text-content">
-													<h3 class="rb-name">BUT DADDY</h3>
-													<p class="rb-des">
-														An emotional family story exploring love, loss, and reconciliation through powerful relationships.
+							<div class="vlt-gap-20"></div>
+							<div class="vlt-content-slider" data-navigation-anchor=".vlt-featured-anchor" data-effect="" data-gap="120" data-loop="" data-speed="" data-autoplay="" data-autoplay-speed="" data-slides-centered="" data-slide-settings="{}" data-free-mode="" data-slider-offset="" data-mousewheel="">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="book-item">
+												<div class="book-image">
+													<img src="/assets/img/bookCx.png" alt="Bitter and Bordeaux" class="img-fluid">
+												</div>
+												<div class="book-content">
+													<h4>Bitter and Bordeaux</h4>
+													<p>What happens when you finally escape the life you’ve always known… only to be pulled back into it?
 													</p>
-													<div class="rb-actions">
-														<a href="#" class="rb-btn">Paperback</a>
-														<a href="#" class="rb-btn">Hardcover</a>
-														<a href="#" class="rb-btn">eBook</a>
+													<p>After decades of hard work, Ronnie and Susie are ready to leave behind the grit of working-class England for a new life in the sun-drenched vineyards of Bordeaux. Trading pints for fine wine and factory floors for French elegance, they set out to embrace what should be a peaceful and well-earned retirement.</p>
+													<ul class="book-features-ul">
+														<li>A compelling story of reinvention and identity</li>
+														<li>Set between industrial Britain and refined French society</li>
+														<li>Explores the enduring pull of one's roots</li>
+														<li>Blends warmth, humor, and sharp observation</li>
+														<li>A richly told journey of life's "third act"</li>
+														<li>Resonates with anyone who has dared to change direction</li>
+													</ul>
+													<div class="buy-btn">
+														<span>Available On</span>
+														<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
 													</div>
+													</a>
 												</div>
 											</div>
 										</div>
-
-										<!-- Book 2 -->
-										<div class="rb-item" style="background-image: url('/assets/img/slide.jpg');">
-											<div class="rb-item-overlay"></div>
-											<div class="rb-item-content">
-												<!-- <div class="rb-book-cover-wrap">
-													<img src="/assets/img/slide.jpg" alt="Bitter and Bordeaux Book Cover" class="rb-book-cover">
-												</div> -->
-
-												<div class="rb-text-content">
-													<h3 class="rb-name">BITTER AND BORDEAUX</h3>
-													<p class="rb-des">
-														A light romance novel based on life at a North England Brewery, where love appears in unexpected places.
+										<div class="swiper-slide">
+											<div class="book-item">
+												<div class="book-image">
+													<img src="/assets/img/book2x.png" alt="But Daddy, What is a Jew?" class="img-fluid">
+												</div>
+												<div class="book-content">
+													<h4>But life has other plans.</h4>
+													<p class="mb-4">As they settle into their new world of culture, charm, and unexpected relationships, their past refuses to stay buried. Old friendships resurface, loyalties are tested, and a sudden crisis back home threatens to unravel everything they thought they had left behind.</p>
+													<p>Set between the contrasting worlds of industrial Britain and refined French society, Bitter and Bordeaux is a compelling story of reinvention, identity, and the enduring pull of one’s roots. With warmth, humor, and sharp observation, it explores what it really means to start again, and whether we ever truly can.
 													</p>
-													<div class="rb-actions">
-														<a href="#" class="rb-btn">Paperback</a>
-														<a href="#" class="rb-btn">Hardcover</a>
-														<a href="#" class="rb-btn">eBook</a>
+													<p>A richly told journey of life’s “third act,” this novel will resonate with anyone who has ever dared to change direction and discovered that the past is never quite finished with us.
+													</p>
+													<!-- <ul class="book-features-ul">
+														<li>Light-hearted romance set in a brewery</li>
+														<li>Explores themes of love and unexpected connections</li>
+														<li>Based on real-life inspirations from North England</li>
+														<li>Follows the adventures of brewery workers finding romance amidst hops and barrels</li>
+														<li>Blends humor and heartfelt moments in a charming North England setting</li>
+														<li>Perfect for fans of cozy romances with a touch of British charm</li>
+													</ul> -->
+													<div class="buy-btn">
+														<span>Available On</span>
+														<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
 													</div>
+													</a>
 												</div>
 											</div>
 										</div>
-
-										<!-- Book 3 -->
-										<div class="rb-item" style="background-image: url('/assets/img/slide-2.jpg');">
-											<div class="rb-item-overlay"></div>
-											<div class="rb-item-content">
-												<!-- <div class="rb-book-cover-wrap">
-													<img src="/assets/img/slide-2.jpg" alt="A Life Too Extraordinary to Be Fiction Book Cover" class="rb-book-cover">
-												</div> -->
-
-												<div class="rb-text-content">
-													<h3 class="rb-name">A LIFE TOO EXTRAORDINARY TO BE FICTION</h3>
-													<p class="rb-des">
-														Set against powerful seas and dangerous realities, this is a gripping story of courage and survival.
-													</p>
-													<div class="rb-actions">
-														<a href="#" class="rb-btn">Paperback</a>
-														<a href="#" class="rb-btn">Hardcover</a>
-														<a href="#" class="rb-btn">eBook</a>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-
-									<div class="rb-button">
-										<button class="rb-prev" type="button" aria-label="Previous">◁</button>
-										<button class="rb-next" type="button" aria-label="Next">▷</button>
 									</div>
 								</div>
 							</div>
-
-							<div class="vlt-gap-50"></div>
+							<div class="vlt-slider-controls vlt-slider-controls--style-2 vlt-featured-anchor">
+								<div class="vlt-swiper-pagination text-center"></div>
+								<div class="vlt-swiper-button-prev">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 45">
+										<path fill="currentColor" fill-rule="evenodd" d="M1.36413 22.5795L24 43.9524l-.7271.6865L.272896 22.9223l.383716-.3623-.362754-.3367L23.0941.319721l.733.680233L1.36413 22.5795z" clip-rule="evenodd" />
+									</svg>
+								</div>
+								<div class="vlt-swiper-button-next">
+									<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 45">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M22.6359 22.3728L0 1.00001.727101.313477 23.7271 22.0301l-.3837.3623.3627.3367L.905866 44.6327l-.732997-.6803L22.6359 22.3728z" fill="currentColor" />
+									</svg>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -672,122 +829,6 @@
 											</div>
 										</article>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--Newsletter-->
-			<!--Section-->
-			<!-- <div class="vlt-section pp-scrollable newsletter-section section" data-theme="light" data-anchor="Newsletter">
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<div class="container">
-							<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
-								style="animation-delay:0s; animation-duration:700ms;">
-								<h3>Stay Connected</h3>
-								<div class="vlt-gap-20"></div>
-								<p>Subscribe to Ronald's newsletter for the latest updates on new books, articles, and exclusive content.</p>
-							</div>
-							<div class="vlt-gap-50"></div>
-							<div class="newsletter-form">
-								<form action="#" method="post">
-									<div class="row">
-										<div class="col-md-8">
-											<input type="email" name="email" placeholder="Enter your email address" required class="form-control">
-										</div>
-										<div class="col-md-4">
-											<button type="submit" class="btn btn-primary btn-block">Subscribe</button>
-										</div>
-									</div>
-								</form>
-								<div class="vlt-gap-30"></div>
-								<p class="small">We respect your privacy and will never share your information.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
-			<div class="vlt-section pp-scrollable featured-works-section section" data-theme="default" data-anchor="FeaturedWorks">
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<div class="container">
-							<div class="vlt-animated-block" data-animation-name="fadeInUpSm"
-								style="animation-delay:0s; animation-duration:700ms;">
-								<h3>Featured Works</h3>
-							</div>
-							<div class="vlt-gap-100"></div>
-							<div class="vlt-content-slider" data-navigation-anchor=".vlt-featured-anchor" data-effect="" data-gap="120" data-loop="" data-speed="" data-autoplay="" data-autoplay-speed="" data-slides-centered="" data-slide-settings="{}" data-free-mode="" data-slider-offset="" data-mousewheel="">
-								<div class="swiper-container">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="book-item">
-												<div class="book-image">
-													<img src="/assets/img/book2x.png" alt="Bitter and Bordeaux" class="img-fluid">
-												</div>
-												<div class="book-content">
-													<h4>Bitter and Bordeaux</h4>
-													<p>A light romance novel based on life at a North England Brewery. Follow the characters as they navigate the frothy challenges of brewery life, discovering love in unexpected places.</p>
-													<a href="#" class="btn btn-amazon">
-														<ul class="book-features-ul">
-															<li>Light-hearted romance set in a brewery</li>
-															<li>Explores themes of love and unexpected connections</li>
-															<li>Based on real-life inspirations from North England</li>
-															<li>Follows the adventures of brewery workers finding romance amidst hops and barrels</li>
-															<li>Blends humor and heartfelt moments in a charming North England setting</li>
-															<li>Perfect for fans of cozy romances with a touch of British charm</li>
-														</ul>
-														<div class="buy-btn">
-															<span>Available On</span>
-															<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="book-item">
-												<div class="book-image">
-													<img src="/assets/img/book2x.png" alt="But Daddy, What is a Jew?" class="img-fluid">
-												</div>
-												<div class="book-content">
-													<h4>Bitter and Bordeaux</h4>
-													<p>A light romance novel based on life at a North England Brewery. Follow the characters as they navigate the frothy challenges of brewery life, discovering love in unexpected places.</p>
-													<a href="#" class="btn btn-amazon">
-														<ul class="book-features-ul">
-															<li>Light-hearted romance set in a brewery</li>
-															<li>Explores themes of love and unexpected connections</li>
-															<li>Based on real-life inspirations from North England</li>
-															<li>Follows the adventures of brewery workers finding romance amidst hops and barrels</li>
-															<li>Blends humor and heartfelt moments in a charming North England setting</li>
-															<li>Perfect for fans of cozy romances with a touch of British charm</li>
-														</ul>
-														<div class="buy-btn">
-															<span>Available On</span>
-															<img src="/assets/img/amazon-logo.png" width="60" alt="Amazon">
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="vlt-gap-40"></div>
-							<div class="vlt-slider-controls vlt-slider-controls--style-2 vlt-featured-anchor">
-								<div class="vlt-swiper-pagination text-center"></div>
-								<div class="vlt-swiper-button-prev">
-									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 45">
-										<path fill="currentColor" fill-rule="evenodd" d="M1.36413 22.5795L24 43.9524l-.7271.6865L.272896 22.9223l.383716-.3623-.362754-.3367L23.0941.319721l.733.680233L1.36413 22.5795z" clip-rule="evenodd" />
-									</svg>
-								</div>
-								<div class="vlt-swiper-button-next">
-									<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 45">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M22.6359 22.3728L0 1.00001.727101.313477 23.7271 22.0301l-.3837.3623.3627.3367L.905866 44.6327l-.732997-.6803L22.6359 22.3728z" fill="currentColor" />
-									</svg>
 								</div>
 							</div>
 						</div>

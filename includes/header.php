@@ -13,17 +13,15 @@
 						<ul class="sf-menu text-center custom-desktop-menu">
 							<li data-menuanchor="Home"><a href="#Home">Home</a></li>
 							<li data-menuanchor="About"><a href="#About">About</a></li>
-							<li class="has-dropdown" data-menuanchor="FeaturedWorks">
-								<a href="#Book">Featured Works</a>
-								<ul class="custom-submenu">
+							<!-- <ul class="custom-submenu">
 									<li><a href="#MainBook">Main Book</a></li>
-									<li><a href="#ChildrensBooks">Children's Books</a></li>
 									<li><a href="#NovelsShortStories">Novels &amp; Short Stories</a></li>
-								</ul>
-							</li>
+								</ul> -->
+							<li data-menuanchor="Book"><a href="#Book">Children's Books</a></li>
 							<li data-menuanchor="ScreenPlays"><a href="#ScreenPlays">ScreenPlays</a></li>
+							<li data-menuanchor="Purchase"><a href="#Purchase">Media and Purchase</a></li>
 							<li data-menuanchor="Testimonials"><a href="#Testimonials">Testimonials</a></li>
-							<li data-menuanchor="Purchase"><a href="#Purchase">Media Center</a></li>
+							<li class="has-dropdown" data-menuanchor="FeaturedWorks"><a href="#Book">Featured Works</a></li>
 							<li data-menuanchor="Blog"><a href="#Blog">Blog</a></li>
 							<li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
 						</ul>
@@ -60,24 +58,25 @@
 	<nav class="vlt-offcanvas-menu__navigation">
 		<!--Navigation-->
 		<ul class="sf-menu custom-mobile-menu">
-			<li data-menuanchor="Home"><a href="#Home">Home</a></li>
-			<li data-menuanchor="About"><a href="#About">About</a></li>
+			<li data-menuanchor="Home"> <a onclick="scrollToAnchor('Home')"
+					href="#Home">Home</a></li>
+			<li data-menuanchor="About"><a onclick="scrollToAnchor('About')" href="#About">About</a></li>
 			<li class="has-dropdown" data-menuanchor="FeaturedWorks">
 				<div class="mobile-parent-row">
-					<a href="#FeaturedWorks">Featured Works</a>
+					<a onclick="scrollToAnchor('FeaturedWorks')" href="#FeaturedWorks">Featured Works</a>
 					<button type="button" class="mobile-submenu-toggle" aria-expanded="false" aria-label="Toggle Featured Works submenu"></button>
 				</div>
 				<ul class="custom-submenu">
-					<li><a href="#MainBook">Main Book</a></li>
-					<li><a href="#ChildrensBooks">Children's Books</a></li>
-					<li><a href="#NovelsShortStories">Novels &amp; Short Stories</a></li>
+					<li><a onclick="scrollToAnchor('MainBook')" href="#MainBook">Main Book</a></li>
+					<li><a onclick="scrollToAnchor('ChildrensBooks')" href="#ChildrensBooks">Children's Books</a></li>
+					<li><a onclick="scrollToAnchor('NovelsShortStories')" href="#NovelsShortStories">Novels &amp; Short Stories</a></li>
 				</ul>
 			</li>
-			<li data-menuanchor="Endorsement"><a href="#Endorsement">ScreenPlays</a></li>
-			<li data-menuanchor="Testimonials"><a href="#Testimonials">Testimonials</a></li>
-			<li data-menuanchor="Purchase"><a href="#Purchase">Media Center</a></li>
-			<li data-menuanchor="Blog"><a href="#Blog">Blogs</a></li>
-			<li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+			<li data-menuanchor="Endorsement"><a onclick="scrollToAnchor('Endorsement')" href="#Endorsement">ScreenPlays</a></li>
+			<li data-menuanchor="Testimonials"><a onclick="scrollToAnchor('Testimonials')" href="#Testimonials">Testimonials</a></li>
+			<li data-menuanchor="Purchase"><a onclick="scrollToAnchor('Purchase')" href="#Purchase">Media Center</a></li>
+			<li data-menuanchor="Blog"><a onclick="scrollToAnchor('Blog')" href="#Blog">Blogs</a></li>
+			<li data-menuanchor="Contact"><a onclick="scrollToAnchor('Contact')" href="#Contact">Contact</a></li>
 		</ul>
 	</nav>
 	<div class="vlt-offcanvas-menu__footer">
